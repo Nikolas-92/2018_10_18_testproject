@@ -1,0 +1,245 @@
+main .block_a .content {
+  height: 116px; }
+  main .block_a .content div:first-child {
+    font-size: 14px;
+    padding-top: 30px; }
+    main .block_a .content div:first-child p {
+      display: inline; }
+    main .block_a .content div:first-child a {
+      color: #67797a;
+      text-decoration: underline; }
+  main .block_a .content div:last-child {
+    font-size: 24px;
+    padding-top: 20px; }
+  main .block_a .content h2 {
+    display: inline;
+    font-size: 24px; }
+  main .block_a .content #m_smbl {
+    margin: 0px 5px; }
+
+main .block_b {
+  background-color: #fbfbfb;
+  overflow: hidden; }
+  main .block_b .content {
+    min-height: 312px;
+    overflow: hidden; }
+    main .block_b .content img {
+      display: block;
+      float: left;
+      margin-top: 31px; }
+    main .block_b .content .watch_dsc {
+      margin-top: 74px;
+      overflow: hidden;
+      float: left;
+      max-width: 920px; }
+      main .block_b .content .watch_dsc p {
+        font-size: 14px;
+        margin-left: 41px; }
+      main .block_b .content .watch_dsc p:first-child {
+        margin-bottom: 24px; }
+      main .block_b .content .watch_dsc a {
+        text-decoration: underline; }
+
+main .block_c .content {
+  overflow: hidden; }
+  main .block_c .content img {
+    cursor: pointer; }
+  main .block_c .content .deliv_head {
+    font-size: 18px;
+    font-weight: bold; }
+    main .block_c .content .deliv_head img {
+      padding-bottom: 2px; }
+  main .block_c .content .deliv_text {
+    font-size: 14px;
+    margin-top: 19px;
+    overflow: hidden; }
+    main .block_c .content .deliv_text p {
+      margin-left: 28px;
+      max-width: 1137px;
+      text-align: left;
+      float: left; }
+    main .block_c .content .deliv_text img {
+      display: block;
+      float: left;
+      padding-top: 5px; }
+  main .block_c .content .deliv_moscow {
+    margin-top: 28px;
+    float: left; }
+    main .block_c .content .deliv_moscow div:last-child {
+      font-size: 14px;
+      font-style: italic; }
+      main .block_c .content .deliv_moscow div:last-child p {
+        float: none;
+        margin-left: 32px; }
+  main .block_c .content .deliv_russia {
+    margin-top: 24px;
+    float: left; }
+
+main .block_d .content p {
+  color: #f13d70;
+  font-size: 14px;
+  text-align: center;
+  margin: 0px 185px; }
+
+main .block_d .content p:first-child {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px; }
+
+main .block_d .content p:last-child {
+  margin-bottom: 55px; }
+
+main .block_d .content a {
+  overflow: hidden;
+  display: block;
+  float: left; }
+
+main .block_d .content div {
+  margin: 36px 38% 52px 38%;
+  overflow: hidden; }
+
+main .block_e .content {
+  overflow: hidden; }
+  main .block_e .content #sec_policy {
+    margin-bottom: 20px; }
+  main .block_e .content #uralsib {
+    margin-left: 30px; }
+  main .block_e .content #yandex {
+    margin-left: 22px; }
+  main .block_e .content .yandex_qiwi {
+    display: inline;
+    float: none;
+    text-decoration: underline; }
+  main .block_e .content .sec_policy {
+    float: none;
+    text-decoration: underline; }
+  main .block_e .content .cards_margin {
+    margin-top: 5px; }
+  main .block_e .content img {
+    display: block;
+    float: left; }
+  main .block_e .content p {
+    float: left;
+    width: 1095px;
+    font-size: 14px;
+    text-align: left;
+    margin: 10px 0px 0px 18px; }
+  main .block_e .content a {
+    overflow: hidden;
+    display: block;
+    float: left;
+    margin: 13px 16px 0px 0px; }
+  main .block_e .content div {
+    overflow: hidden;
+    margin-top: 14px; }
+  main .block_e .content div:first-child {
+    margin: 0px; }
+    main .block_e .content div:first-child p {
+      width: 331px;
+      font-weight: bold;
+      font-size: 18px;
+      margin: 0px; }
+    main .block_e .content div:first-child img {
+      margin: 0px 0px 0px 0px; }
+    main .block_e .content div:first-child a {
+      margin: 10px 0px 0px 10px; }
+  main .block_e .content div:last-child img {
+    margin: 8px 0px 0px 20px; }
+
+main .block_f .content {
+  overflow: hidden; }
+  main .block_f .content img {
+    display: block;
+    float: left; }
+  main .block_f .content a {
+    overflow: hidden;
+    display: block;
+    float: left;
+    margin: 5px 31px 0px 0px; }
+  main .block_f .content p {
+    float: left;
+    font-size: 14px;
+    text-align: left; }
+  main .block_f .content div {
+    overflow: hidden;
+    margin-top: 14px; }
+  main .block_f .content .warning {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e8e8e8; }
+    main .block_f .content .warning p {
+      width: 1096px;
+      margin: 2px 0px 0px 18px; }
+    main .block_f .content .warning img {
+      margin-left: 20px; }
+  main .block_f .content .payment_method {
+    margin-top: 33px; }
+    main .block_f .content .payment_method div:first-child {
+      margin: 0px; }
+      main .block_f .content .payment_method div:first-child p {
+        width: 347px;
+        font-weight: bold;
+        font-size: 18px;
+        margin: 0px; }
+      main .block_f .content .payment_method div:first-child img {
+        margin: 0px 0px 0px 0px; }
+      main .block_f .content .payment_method div:first-child a {
+        margin: 10px 0px 0px 10px; }
+  main .block_f .content .return_exchange {
+    margin-top: 24px; }
+    main .block_f .content .return_exchange #condition {
+      float: none;
+      margin-top: 14px;
+      margin: 14px 0px 0px 35px; }
+    main .block_f .content .return_exchange div:first-child {
+      margin: 0px; }
+      main .block_f .content .return_exchange div:first-child p {
+        width: 211px;
+        font-weight: bold;
+        font-size: 18px;
+        margin: 0px; }
+      main .block_f .content .return_exchange div:first-child img {
+        margin: 0px 0px 0px 0px; }
+      main .block_f .content .return_exchange div:first-child a {
+        margin: 10px 0px 0px 10px; }
+
+main .block_g .content {
+  min-height: 160px; }
+  main .block_g .content .ud {
+    font-size: 14px;
+    font-weight: normal;
+    color: #b8bfc0;
+    display: block; }
+  main .block_g .content img {
+    display: block;
+    float: left;
+    margin-top: 29px; }
+  main .block_g .content .d_t {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 0px;
+    display: inline; }
+  main .block_g .content .time {
+    color: #4bc1c1;
+    margin-left: 10px; }
+  main .block_g .content .phone {
+    color: #4bc1c1;
+    margin-left: 3px; }
+  main .block_g .content .hint {
+    display: block;
+    font-size: 10px;
+    padding-top: 3px;
+    color: #b8bfc0; }
+  main .block_g .content .schedule {
+    display: inline-block;
+    margin-top: 27px;
+    overflow: hidden; }
+    main .block_g .content .schedule div {
+      float: left;
+      margin: 29px 0px 0px 13px; }
+  main .block_g .content .consultation {
+    display: inline-block;
+    overflow: hidden;
+    margin: 27px 0px 0px 85px; }
+    main .block_g .content .consultation div {
+      float: left;
+      margin: 29px 0px 0px 13px; }

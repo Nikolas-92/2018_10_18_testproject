@@ -1,3 +1,6 @@
+$width: 1170px;
+
+
 // GENERAL start
 *{
   margin: 0;
@@ -7,6 +10,9 @@
   font-family: Proxima Nova, sans-serif;
   text-align: justify;
   letter-spacing: 0.2px;
+}
+html {
+  min-width: $width;
 }
 ul{
   list-style: none;
@@ -19,7 +25,303 @@ body {
   width: 100%;
   height: 100%;
 }
+.content {
+  width: 1170px;
+  margin: 0 auto;
+}
 .hover {
   background-color: #f13d70;
 }
+.bold {
+  font-weight: bold;
+}
+.pink {
+  color: #f13d70;
+}
 // GENERAL end
+
+
+// HEADER start
+header {
+  .block_a {
+    .content {
+      width: $width;
+      height: 96px;
+      margin: 0 auto;
+      border-bottom: 1px solid #e8e8e8;
+      div {
+        float: left;
+      }
+      .logo_and_name {
+        margin-top: 26px;
+        a {
+          display: block;
+          overflow: hidden;
+        }
+        img {
+          display: block;
+          float: left;
+        }
+        h1 {
+          overflow: hidden;
+          float: left;
+          font-size: 26px;
+          margin: 5px 0px 0px 13px;
+        }
+      }
+      .location {
+        margin-top: 26px;
+        a {
+          display: block;
+          overflow: hidden;
+          margin: 14px 0px 0px 40px;
+        }
+        span {
+          font-size: 14px;
+          color: #f13d70;
+          display: block;
+          float: left;
+          margin: 0px 5px 0px 10px;
+        }
+        img {
+          display: block;
+          float: left;
+        }
+        .margin_top {
+          margin-top: 7px;
+        }
+      }
+      .search {
+        width: 450px;
+        height: 38px;
+        background-color: #f6f6f6;
+        border-radius: 25px;
+        margin: 30px 100px 0px 60px;
+        .input_text {
+          display: block;
+          float: left;
+          background-color: #f6f6f6;
+          border: 0px;
+          font-size: 14px;
+          width: 384px;
+        }
+        .input_image {
+          display: block;
+          float: left;
+          margin-left: 4px;
+        }
+        form {
+          overflow: hidden;
+          float: left;
+          margin: 10px 0px 0px 32px;
+        }
+        img {
+          margin: 11px 0px 0px 4px;
+        }
+      }
+      .registration_and_authorization {
+        margin-top: 38px;
+        a {
+          display: inline-block;
+          font-size: 14px;
+          font-weight: bold;
+          color: #67797a;
+        }
+        span {
+          display: inline-block;
+          margin: 0px 3px;
+        }
+      }
+      .cart {
+        margin: 30px 0px 0px 35px;
+        img {
+          display: block;
+          float: left;
+        }
+        a {
+          display: block;
+          float: left;
+          margin: 6px 0px 0px 8px;
+        }
+        p {
+          float: left;
+          font-size: 11px;
+          background-color: #b8bfc0;
+          border-radius: 100%;
+          width: 13px;
+          text-align: center;
+          color: #ffffff;
+        }
+        .margin_left {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  .block_b {
+    .content {
+      width: $width;
+      height: 95px;
+      margin: 0 auto;
+      .hint {
+        display: block;
+        font-size: 10px;
+        padding-top: 3px;
+        color: #b8bfc0;
+      }
+      .time {
+        color: #4bc1c1;
+        margin-left: 10px;
+      }
+      .phone {
+        color: #4bc1c1;
+        margin-left: 3px;
+      }
+      .d_t {
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 0px;
+        display: inline;
+      }
+      .first_in_russia {
+        width: 292px;
+        font-size: 12px;
+        overflow: hidden;
+        display: inline-block;
+        color: #67797a;
+        margin: 26px 55px 0px 0px;
+        p:last-child {
+          font-size: 10px;
+          color: #b8bfc0;
+          float: right;
+          padding-top: 3px;
+        }
+      }
+      .contacts {
+        display: inline-block;
+        margin-right: 20px;
+        img {
+          display: block;
+          float: left;
+        }
+        div {
+          float: left;
+          margin-left: 13px;
+          p {
+            display: inline-block;
+          }
+        }
+      }
+      button {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 10px;
+        background-color: #4bc1c1;
+        border: 0px;
+        padding: 12px 17px;
+        border-radius: 20px;
+        cursor: pointer;
+        float: right;
+        margin-top: 28px;
+      }
+      button:hover {
+        background-color: #46cfcf;
+      }
+    }
+  }
+  .block_c {
+    background-color: #4bc1c1;
+    .content {
+      width: $width;
+      height: 50px;
+      margin: 0 auto;
+      ul {
+        overflow: hidden;
+      }
+      li {
+        display: inline-block;
+        float: left;
+      }
+      a {
+        color: #ffffff;
+        font-weight: bold;
+        padding: 15px 22px;
+        display: inline-block;
+      }
+      a.no_lpadding {
+        padding-left: 0px;
+      }
+      a:hover {
+        background-color: #f13d70;
+      }
+      #home_icn {
+        display: inline-block;
+        margin-right: 8px;
+      }
+      #down_icn {
+        display: inline-block;
+        margin: 0px 0px 3px 6px;
+      }
+    }
+  }
+}
+// HEADER end
+
+
+// FOOTER start
+footer {
+  .block_a {
+    background-color: #3f4849;
+    .content {
+      width: $width;
+      min-height: 380px;
+      margin: 0 auto;
+      a {
+        color: #b8bfc0;
+      }
+      a:hover {
+        color: #f13d70;
+        text-decoration: underline;
+      }
+      ul {
+        display: block;
+        float: left;
+        margin-top: 60px;
+      }
+      li:first-child {
+        color: white;
+        font-weight: bold;
+        margin-bottom: 22px;
+      }
+      li {
+        color: #b8bfc0;
+        font-size: 14px;
+        img {
+          display: block;
+          float: left;
+          margin-right: 10px
+        }
+      }
+      .soc_net {
+        display: inline-block;
+        margin: 0;
+        a {
+          display: inline-block;
+        }
+        img {
+          margin-right: 1px;
+        }
+      }
+      .ksk {
+        margin-right: 205px;
+        li:not(:first-child) {
+          margin-top: 13px;
+        }
+      }
+      #copyright {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+//FOOTER end

@@ -1,0 +1,334 @@
+// CONTENT start
+main {
+  .block_a {
+    .content {
+      height: 116px;
+      div:first-child {
+        font-size: 14px;
+        padding-top: 30px;
+        p {
+          display: inline;
+        }
+        a {
+          color: #67797a;
+          text-decoration: underline;
+        }
+      }
+      div:last-child {
+        font-size: 24px;
+        padding-top: 20px;
+      }
+      h2 {
+        display: inline;
+        font-size: 24px;
+      }
+      #m_smbl {
+        margin: 0px 5px;
+      }
+    }
+  }
+  .block_b {
+    background-color: #fbfbfb;
+    overflow: hidden;
+    .content {
+      min-height: 312px;
+      overflow: hidden;
+      img {
+        display: block;
+        float: left;
+        margin-top: 31px;
+      }
+      .watch_dsc {
+        margin-top: 74px;
+        overflow: hidden;
+        float: left;
+        max-width: 920px;
+        p {
+          font-size: 14px;
+          margin-left: 41px;
+        }
+        p:first-child {
+          margin-bottom: 24px;
+        }
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .block_c {
+    .content {
+      overflow: hidden;
+      img {
+        cursor: pointer;
+      }
+      .deliv_head {
+        font-size: 18px;
+        font-weight: bold;
+        img {
+          padding-bottom: 2px;
+        }
+      }
+      .deliv_text {
+        font-size: 14px;
+        margin-top: 19px;
+        overflow: hidden;
+        p {
+          margin-left: 28px;
+          max-width: 1137px;
+          text-align: left;
+          float: left;
+        }
+        img {
+          display: block;
+          float: left;
+          padding-top: 5px;
+        }
+      }
+      .deliv_moscow {
+        margin-top: 28px;
+        float: left;
+        div:last-child {
+          font-size: 14px;
+          font-style: italic;
+          p {
+            float: none;
+            margin-left: 32px;
+          }
+        }
+
+      }
+      .deliv_russia {
+        margin-top: 24px;
+        float: left;
+      }
+    }
+  }
+  .block_d {
+    .content {
+      p {
+        color: #f13d70;
+        font-size: 14px;
+        text-align: center;
+        margin: 0px 185px;
+      }
+      p:first-child {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 30px;
+      }
+      p:last-child {
+        margin-bottom: 55px;
+      }
+      a {
+        overflow: hidden;
+        display: block;
+        float: left;
+      }
+      div {
+        margin: 36px 38% 52px 38%;
+        overflow: hidden;
+      }
+    }
+  }
+  .block_e {
+    .content {
+      overflow: hidden;
+      #sec_policy {
+        margin-bottom: 20px;
+      }
+      #uralsib {
+        margin-left: 30px;
+      }
+      #yandex {
+        margin-left: 22px;
+      }
+      .yandex_qiwi {
+        display: inline;
+        float: none;
+        text-decoration: underline;
+      }
+      .sec_policy {
+        float: none;
+        text-decoration: underline;
+      }
+      .cards_margin {
+        margin-top: 5px;
+      }
+      .uralsib_yandex {
+      }
+      img {
+        display: block;
+        float: left;
+      }
+      p {
+        float: left;
+        width: 1095px;
+        font-size: 14px;
+        text-align: left;
+        margin: 10px 0px 0px 18px;
+      }
+      a {
+        overflow: hidden;
+        display: block;
+        float: left;
+        margin: 13px 16px 0px 0px;
+      }
+      div {
+        overflow: hidden;
+        margin-top: 14px;
+      }
+      div:first-child {
+        margin: 0px;
+        p {
+          width: 331px;
+          font-weight: bold;
+          font-size: 18px;
+          margin: 0px;
+        }
+        img {
+          margin: 0px 0px 0px 0px;
+        }
+        a {
+          margin: 10px 0px 0px 10px;
+        }
+      }
+      div:last-child {
+        img {
+          margin: 8px 0px 0px 20px;
+        }
+      }
+    }
+  }
+  .block_f {
+    .content {
+      overflow: hidden;
+      img {
+        display: block;
+        float: left;
+      }
+      a {
+        overflow: hidden;
+        display: block;
+        float: left;
+        margin: 5px 31px 0px 0px;
+      }
+      p {
+        float: left;
+        font-size: 14px;
+        text-align: left;
+      }
+      div {
+        overflow: hidden;
+        margin-top: 14px;
+      }
+      .warning {
+        padding-bottom: 30px;
+        border-bottom: 1px solid #e8e8e8;
+        p {
+          width: 1096px;
+          margin: 2px 0px 0px 18px;
+        }
+        img {
+          margin-left: 20px;
+        }
+      }
+      .payment_method {
+        margin-top: 33px;
+        div:first-child {
+          margin: 0px;
+          p {
+            width: 347px;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 0px;
+          }
+          img {
+            margin: 0px 0px 0px 0px;
+          }
+          a {
+            margin: 10px 0px 0px 10px;
+          }
+        }
+      }
+      .return_exchange {
+        margin-top: 24px;
+        #condition {
+          float: none;
+          margin-top: 14px;
+          margin: 14px 0px 0px 35px;
+        }
+        div:first-child {
+          margin: 0px;
+          p {
+            width: 211px;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 0px;
+          }
+          img {
+            margin: 0px 0px 0px 0px;
+          }
+          a {
+            margin: 10px 0px 0px 10px;
+          }
+        }
+      }
+    }
+  }
+  .block_g {
+    .content {
+      min-height: 160px;
+      .ud {
+        font-size: 14px;
+        font-weight: normal;
+        color: #b8bfc0;
+        display: block;
+      }
+      img {
+        display: block;
+        float: left;
+        margin-top: 29px;
+      }
+      .d_t {
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 0px;
+        display: inline;
+      }
+      .time {
+        color: #4bc1c1;
+        margin-left: 10px;
+      }
+      .phone {
+        color: #4bc1c1;
+        margin-left: 3px;
+      }
+      .hint {
+        display: block;
+        font-size: 10px;
+        padding-top: 3px;
+        color: #b8bfc0;
+      }
+      .schedule {
+        display: inline-block;
+        margin-top: 27px;
+        overflow: hidden;
+        div {
+          float: left;
+          margin: 29px 0px 0px 13px;
+        }
+      }
+      .consultation {
+        display: inline-block;
+        overflow: hidden;
+        margin: 27px 0px 0px 85px;
+        div {
+          float: left;
+          margin: 29px 0px 0px 13px;
+        }
+      }
+    }
+  }
+}
+// CONTENT end

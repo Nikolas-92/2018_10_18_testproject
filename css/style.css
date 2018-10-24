@@ -7,6 +7,9 @@
   text-align: justify;
   letter-spacing: 0.2px; }
 
+html {
+  min-width: 1170px; }
+
 ul {
   list-style: none; }
 
@@ -18,5 +21,229 @@ body {
   width: 100%;
   height: 100%; }
 
+.content {
+  width: 1170px;
+  margin: 0 auto; }
+
 .hover {
   background-color: #f13d70; }
+
+.bold {
+  font-weight: bold; }
+
+.pink {
+  color: #f13d70; }
+
+header .block_a .content {
+  width: 1170px;
+  height: 96px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e8e8e8; }
+  header .block_a .content div {
+    float: left; }
+  header .block_a .content .logo_and_name {
+    margin-top: 26px; }
+    header .block_a .content .logo_and_name a {
+      display: block;
+      overflow: hidden; }
+    header .block_a .content .logo_and_name img {
+      display: block;
+      float: left; }
+    header .block_a .content .logo_and_name h1 {
+      overflow: hidden;
+      float: left;
+      font-size: 26px;
+      margin: 5px 0px 0px 13px; }
+  header .block_a .content .location {
+    margin-top: 26px; }
+    header .block_a .content .location a {
+      display: block;
+      overflow: hidden;
+      margin: 14px 0px 0px 40px; }
+    header .block_a .content .location span {
+      font-size: 14px;
+      color: #f13d70;
+      display: block;
+      float: left;
+      margin: 0px 5px 0px 10px; }
+    header .block_a .content .location img {
+      display: block;
+      float: left; }
+    header .block_a .content .location .margin_top {
+      margin-top: 7px; }
+  header .block_a .content .search {
+    width: 450px;
+    height: 38px;
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    margin: 30px 100px 0px 60px; }
+    header .block_a .content .search .input_text {
+      display: block;
+      float: left;
+      background-color: #f6f6f6;
+      border: 0px;
+      font-size: 14px;
+      width: 384px; }
+    header .block_a .content .search .input_image {
+      display: block;
+      float: left;
+      margin-left: 4px; }
+    header .block_a .content .search form {
+      overflow: hidden;
+      float: left;
+      margin: 10px 0px 0px 32px; }
+    header .block_a .content .search img {
+      margin: 11px 0px 0px 4px; }
+  header .block_a .content .registration_and_authorization {
+    margin-top: 38px; }
+    header .block_a .content .registration_and_authorization a {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: bold;
+      color: #67797a; }
+    header .block_a .content .registration_and_authorization span {
+      display: inline-block;
+      margin: 0px 3px; }
+  header .block_a .content .cart {
+    margin: 30px 0px 0px 35px; }
+    header .block_a .content .cart img {
+      display: block;
+      float: left; }
+    header .block_a .content .cart a {
+      display: block;
+      float: left;
+      margin: 6px 0px 0px 8px; }
+    header .block_a .content .cart p {
+      float: left;
+      font-size: 11px;
+      background-color: #b8bfc0;
+      border-radius: 100%;
+      width: 13px;
+      text-align: center;
+      color: #ffffff; }
+    header .block_a .content .cart .margin_left {
+      margin-left: 5px; }
+
+header .block_b .content {
+  width: 1170px;
+  height: 95px;
+  margin: 0 auto; }
+  header .block_b .content .hint {
+    display: block;
+    font-size: 10px;
+    padding-top: 3px;
+    color: #b8bfc0; }
+  header .block_b .content .time {
+    color: #4bc1c1;
+    margin-left: 10px; }
+  header .block_b .content .phone {
+    color: #4bc1c1;
+    margin-left: 3px; }
+  header .block_b .content .d_t {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 0px;
+    display: inline; }
+  header .block_b .content .first_in_russia {
+    width: 292px;
+    font-size: 12px;
+    overflow: hidden;
+    display: inline-block;
+    color: #67797a;
+    margin: 26px 55px 0px 0px; }
+    header .block_b .content .first_in_russia p:last-child {
+      font-size: 10px;
+      color: #b8bfc0;
+      float: right;
+      padding-top: 3px; }
+  header .block_b .content .contacts {
+    display: inline-block;
+    margin-right: 20px; }
+    header .block_b .content .contacts img {
+      display: block;
+      float: left; }
+    header .block_b .content .contacts div {
+      float: left;
+      margin-left: 13px; }
+      header .block_b .content .contacts div p {
+        display: inline-block; }
+  header .block_b .content button {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 10px;
+    background-color: #4bc1c1;
+    border: 0px;
+    padding: 12px 17px;
+    border-radius: 20px;
+    cursor: pointer;
+    float: right;
+    margin-top: 28px; }
+  header .block_b .content button:hover {
+    background-color: #46cfcf; }
+
+header .block_c {
+  background-color: #4bc1c1; }
+  header .block_c .content {
+    width: 1170px;
+    height: 50px;
+    margin: 0 auto; }
+    header .block_c .content ul {
+      overflow: hidden; }
+    header .block_c .content li {
+      display: inline-block;
+      float: left; }
+    header .block_c .content a {
+      color: #ffffff;
+      font-weight: bold;
+      padding: 15px 22px;
+      display: inline-block; }
+    header .block_c .content a.no_lpadding {
+      padding-left: 0px; }
+    header .block_c .content a:hover {
+      background-color: #f13d70; }
+    header .block_c .content #home_icn {
+      display: inline-block;
+      margin-right: 8px; }
+    header .block_c .content #down_icn {
+      display: inline-block;
+      margin: 0px 0px 3px 6px; }
+
+footer .block_a {
+  background-color: #3f4849; }
+  footer .block_a .content {
+    width: 1170px;
+    min-height: 380px;
+    margin: 0 auto; }
+    footer .block_a .content a {
+      color: #b8bfc0; }
+    footer .block_a .content a:hover {
+      color: #f13d70;
+      text-decoration: underline; }
+    footer .block_a .content ul {
+      display: block;
+      float: left;
+      margin-top: 60px; }
+    footer .block_a .content li:first-child {
+      color: white;
+      font-weight: bold;
+      margin-bottom: 22px; }
+    footer .block_a .content li {
+      color: #b8bfc0;
+      font-size: 14px; }
+      footer .block_a .content li img {
+        display: block;
+        float: left;
+        margin-right: 10px; }
+    footer .block_a .content .soc_net {
+      display: inline-block;
+      margin: 0; }
+      footer .block_a .content .soc_net a {
+        display: inline-block; }
+      footer .block_a .content .soc_net img {
+        margin-right: 1px; }
+    footer .block_a .content .ksk {
+      margin-right: 205px; }
+      footer .block_a .content .ksk li:not(:first-child) {
+        margin-top: 13px; }
+    footer .block_a .content #copyright {
+      margin-top: 30px; }
