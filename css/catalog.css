@@ -204,7 +204,8 @@ main .block_e .content {
           width: 50%; }
           main .block_e .content .latest .lt_thumb .thumbline_three .rating img {
             display: block;
-            float: left; }
+            float: left;
+            margin-right: 2px; }
         main .block_e .content .latest .lt_thumb .thumbline_three .comment {
           overflow: hidden;
           float: right;
@@ -302,7 +303,8 @@ main .block_e .content {
         main .block_e .content .offer .fr_thumb .thumbline_one img {
           display: block;
           float: right;
-          margin-top: 5px; }
+          margin-top: 5px;
+          margin: 5px 0px 0px 2px; }
       main .block_e .content .offer .fr_thumb .thumbline_two {
         overflow: hidden; }
         main .block_e .content .offer .fr_thumb .thumbline_two img {
@@ -345,3 +347,102 @@ main .block_e .content {
           text-align: center; }
           main .block_e .content .offer .fr_thumb .thumbline_three .pricebig sup {
             font-size: 14px; }
+
+main .block_f {
+  background-color: #fbfbfb; }
+  main .block_f .content {
+    width: 100%;
+    margin: 0px;
+    overflow: hidden; }
+    main .block_f .content .corewrapper {
+      width: 1170px;
+      margin: 0 auto 30px auto;
+      overflow: hidden; }
+    main .block_f .content .hdrwrapper {
+      overflow: hidden;
+      background-color: #ffffff; }
+      main .block_f .content .hdrwrapper .hdrwrappercenter {
+        overflow: hidden;
+        margin: 0 auto;
+        width: 1170px; }
+        main .block_f .content .hdrwrapper .hdrwrappercenter p {
+          font-family: Roboto, sans-serif;
+          font-size: 24px;
+          margin: 45px 0px;
+          float: left;
+          width: 50%; }
+    main .block_f .content .buyercomment {
+      overflow: hidden;
+      width: 50%;
+      float: left; }
+      main .block_f .content .buyercomment .comment {
+        overflow: hidden;
+        width: 100%;
+        margin-top: 30px; }
+        main .block_f .content .buyercomment .comment .avatar {
+          overflow: hidden;
+          width: 98px;
+          height: 98px;
+          border: 1px solid #e8e8e8;
+          background-color: #ffffff;
+          background-image: url("../img/avatar.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          float: left;
+          margin-top: 3px; }
+        main .block_f .content .buyercomment .comment .commentcontent {
+          overflow: hidden;
+          float: left;
+          width: 455px;
+          margin: 0px 0px 0px 13px; }
+          main .block_f .content .buyercomment .comment .commentcontent .username {
+            font-size: 14px; }
+          main .block_f .content .buyercomment .comment .commentcontent .ratetime {
+            overflow: hidden;
+            margin-top: 8px; }
+            main .block_f .content .buyercomment .comment .commentcontent .ratetime .rating {
+              overflow: hidden;
+              float: left; }
+              main .block_f .content .buyercomment .comment .commentcontent .ratetime .rating img {
+                display: block;
+                float: left;
+                margin-right: 2px; }
+            main .block_f .content .buyercomment .comment .commentcontent .ratetime .timestamp {
+              overflow: hidden;
+              float: right; }
+              main .block_f .content .buyercomment .comment .commentcontent .ratetime .timestamp p {
+                float: right;
+                font-size: 12px;
+                color: #b8bfc0; }
+              main .block_f .content .buyercomment .comment .commentcontent .ratetime .timestamp img {
+                display: block;
+                float: right;
+                margin: 2px 8px 0px 0px; }
+          main .block_f .content .buyercomment .comment .commentcontent .usermessage {
+            font-size: 12px;
+            font-family: Myriad Pro, sans-serif;
+            margin-top: 8px; }
+      main .block_f .content .buyercomment .commentswipe {
+        overflow: hidden; }
+        main .block_f .content .buyercomment .commentswipe button {
+          width: 24px;
+          height: 24px;
+          background-color: #e8e8e8;
+          border: none;
+          border-radius: 25px;
+          float: right;
+          cursor: pointer;
+          margin-top: 8px;
+          background-repeat: no-repeat;
+          background-position: center; }
+        main .block_f .content .buyercomment .commentswipe button:first-child {
+          margin: 8px 16px 0px 6px;
+          background-image: url("../img/comment_next.png"); }
+        main .block_f .content .buyercomment .commentswipe button:last-child {
+          background-image: url("../img/comment_prev.png"); }
+        main .block_f .content .buyercomment .commentswipe button:hover {
+          background-color: #f13d70; }
+    main .block_f .content .paymentdelivery {
+      overflow: hidden;
+      width: 50%;
+      float: left; }

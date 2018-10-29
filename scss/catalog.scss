@@ -153,7 +153,6 @@ main {
           }
           img {
             display: block;
-            //float: left;
             margin: 0 auto;
           }
           p {
@@ -253,6 +252,7 @@ main {
               img {
                 display: block;
                 float: left;
+                margin-right: 2px;
               }
             }
             .comment {
@@ -375,6 +375,7 @@ main {
               display: block;
               float: right;
               margin-top: 5px;
+              margin: 5px 0px 0px 2px;
             }
           }
           .thumbline_two {
@@ -429,6 +430,128 @@ main {
             }
           }
         }
+      }
+    }
+  }
+  .block_f {
+    background-color: #fbfbfb;
+    .content {
+      width: 100%;
+      margin: 0px;
+      overflow: hidden;
+      .corewrapper {
+        width: 1170px;
+        margin: 0 auto 30px auto;
+        overflow: hidden;
+      }
+      .hdrwrapper {
+        overflow: hidden;
+        background-color: #ffffff;
+        .hdrwrappercenter {
+          overflow: hidden;
+          margin: 0 auto;
+          width: 1170px;
+          p {
+            font-family: Roboto, sans-serif;
+            font-size: 24px;
+            margin: 45px 0px;
+            float: left;
+            width: 50%;
+          }
+        }
+      }
+      .buyercomment {
+        overflow: hidden;
+        width: 50%;
+        float: left;
+        .comment {
+          overflow: hidden;
+          width: 100%;
+          margin-top: 30px;
+          .avatar {
+            overflow: hidden;
+            width: 98px;
+            height: 98px;
+            border: 1px solid #e8e8e8;
+            background-color: #ffffff;
+            background-image: url("../img/avatar.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            float: left;
+            margin-top: 3px;
+          }
+          .commentcontent {
+            overflow: hidden;
+            float: left;
+            width: 455px;
+            margin: 0px 0px 0px 13px;
+            .username {
+              font-size: 14px;
+            }
+            .ratetime {
+              overflow: hidden;
+              margin-top: 8px;
+              .rating {
+                overflow: hidden;
+                float: left;
+                img {
+                  display: block;
+                  float: left;
+                  margin-right: 2px;
+                }
+              }
+              .timestamp {
+                overflow: hidden;
+                float: right;
+                p {
+                  float: right;
+                  font-size: 12px;
+                  color: #b8bfc0;
+                }
+                img {
+                  display: block;
+                  float: right;
+                  margin: 2px 8px 0px 0px;
+                }
+              }
+            }
+            .usermessage {
+              font-size: 12px;
+              font-family: Myriad Pro, sans-serif;
+              margin-top: 8px;
+            }
+          }
+        }
+        .commentswipe {
+          overflow: hidden;
+          button {
+            width: 24px;
+            height: 24px;
+            background-color: #e8e8e8;
+            border: none;
+            border-radius: 25px;
+            float: right;
+            cursor: pointer;
+            margin-top: 8px;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          button:first-child {
+            margin: 8px 16px 0px 6px;
+            background-image: url("../img/comment_next.png");
+          }
+          button:last-child {
+            background-image: url("../img/comment_prev.png");
+          }
+          button:hover {
+            background-color: #f13d70;
+          }
+        }
+      }
+      .paymentdelivery {
+        overflow: hidden;
+        width: 50%;
+        float: left;
       }
     }
   }
