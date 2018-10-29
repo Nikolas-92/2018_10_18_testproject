@@ -1,0 +1,347 @@
+body {
+  min-width: 1920px; }
+
+main .block_a {
+  background-color: #f6f6f6; }
+  main .block_a .content {
+    height: 100px; }
+
+main .block_b .content {
+  width: 100%;
+  margin: 0px;
+  overflow: hidden; }
+  main .block_b .content .watch_look {
+    background-size: cover;
+    width: 620px;
+    height: 349px;
+    float: left;
+    margin-top: 30px; }
+    main .block_b .content .watch_look .watch_dscr {
+      overflow: hidden;
+      float: left;
+      margin: 146px 0px 0px 52px; }
+    main .block_b .content .watch_look .read_more {
+      display: block;
+      float: left;
+      font-size: 18px;
+      color: #ffffff;
+      text-decoration: underline;
+      float: right;
+      margin: 85px 48px 0px 0px; }
+      main .block_b .content .watch_look .read_more a {
+        overflow: hidden; }
+      main .block_b .content .watch_look .read_more img {
+        float: right;
+        margin: 5px 0px 0px 10px; }
+    main .block_b .content .watch_look button {
+      display: block;
+      float: left;
+      background-color: #ffffff;
+      color: #67797a;
+      font-size: 14px;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      margin-top: 7px;
+      width: 95px;
+      height: 37px;
+      text-align: center;
+      cursor: pointer; }
+    main .block_b .content .watch_look p {
+      float: left;
+      font-size: 18px;
+      color: #ffffff;
+      width: 368px;
+      margin-top: 7px; }
+    main .block_b .content .watch_look img {
+      margin: 0px 25px 0px 15px;
+      float: left; }
+  main .block_b .content #wl_one {
+    background-image: url("../img/watch2.png"); }
+  main .block_b .content #wl_two {
+    background-image: url("../img/watch3.png");
+    height: 351px;
+    margin: 30px 30px 0 30px; }
+    main .block_b .content #wl_two p {
+      width: 388px; }
+  main .block_b .content #wl_three {
+    background-image: url("../img/watch4.png"); }
+
+main .block_c .content {
+  overflow: hidden; }
+  main .block_c .content .hdr {
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: 80px 0px 75px 0px; }
+  main .block_c .content .ctlg {
+    float: left; }
+    main .block_c .content .ctlg .ctlg_imgwrapper {
+      display: block;
+      float: left;
+      width: 234px;
+      height: 220px; }
+    main .block_c .content .ctlg img {
+      display: block;
+      margin: 0 auto; }
+    main .block_c .content .ctlg a {
+      display: block;
+      float: left;
+      clear: both;
+      overflow: hidden;
+      width: 157px;
+      font-size: 18px;
+      font-family: Roboto, sans-serif;
+      text-align: center;
+      color: #67797a;
+      margin: 0px 38px; }
+
+main .block_d {
+  background-color: #fbfbfb; }
+  main .block_d .content {
+    overflow: hidden;
+    width: 100%;
+    margin: 0px; }
+    main .block_d .content .hdr {
+      font-family: Roboto, sans-serif;
+      font-size: 24px;
+      text-align: center;
+      padding: 80px 0px 55px 0px;
+      background-color: #ffffff; }
+    main .block_d .content .category {
+      width: 1170px;
+      margin: 0 auto;
+      overflow: hidden; }
+      main .block_d .content .category .ctgr {
+        overflow: hidden;
+        float: left;
+        width: 160px;
+        margin: 53px 0px 58px 92px; }
+        main .block_d .content .category .ctgr .ctgr_imgwrapper {
+          display: block;
+          float: left;
+          min-width: 102px;
+          min-height: 89px;
+          width: 100%;
+          height: 100%; }
+        main .block_d .content .category .ctgr img {
+          display: block;
+          margin: 0 auto; }
+        main .block_d .content .category .ctgr p {
+          float: left;
+          clear: both;
+          width: 100%;
+          text-align: center; }
+        main .block_d .content .category .ctgr .ctgr_type {
+          font-family: Roboto, sans-serif;
+          font-size: 18px;
+          margin: 27px 0px 20px 0px;
+          float: left;
+          clear: both;
+          width: 100%;
+          text-align: center;
+          color: #67797a; }
+        main .block_d .content .category .ctgr .ctgr_context {
+          font-family: Myriad Pro, sans-serif;
+          font-size: 11px; }
+      main .block_d .content .category .ctgr:first-child {
+        margin-left: 0px; }
+
+main .block_e .content {
+  overflow: hidden; }
+  main .block_e .content .hdr {
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: 45px 0px; }
+  main .block_e .content .thumbwrapper {
+    overflow: hidden;
+    width: 100%; }
+  main .block_e .content .latest {
+    overflow: hidden; }
+    main .block_e .content .latest .lt_thumb:first-child {
+      margin: 0px; }
+    main .block_e .content .latest .lt_thumb {
+      overflow: hidden;
+      width: 209px;
+      height: 383px;
+      border: 1px solid #e8e8e8;
+      padding: 15px 30px;
+      float: left;
+      margin-left: 28px; }
+      main .block_e .content .latest .lt_thumb .thumbline_one {
+        overflow: hidden; }
+        main .block_e .content .latest .lt_thumb .thumbline_one p {
+          font-size: 12px;
+          font-weight: bold;
+          color: #ffffff;
+          border-radius: 5px;
+          float: left;
+          padding: 4px 12px;
+          background-color: #f13d70; }
+        main .block_e .content .latest .lt_thumb .thumbline_one img {
+          display: block;
+          float: right; }
+      main .block_e .content .latest .lt_thumb .thumbline_two img {
+        display: block;
+        margin: 20px auto 6px auto; }
+      main .block_e .content .latest .lt_thumb .thumbline_three {
+        overflow: hidden;
+        border-bottom: 1px solid #e8e8e8;
+        padding-bottom: 5px; }
+        main .block_e .content .latest .lt_thumb .thumbline_three .m_name {
+          display: block;
+          font-size: 12px;
+          color: #4bc1c1;
+          margin-top: 23px; }
+        main .block_e .content .latest .lt_thumb .thumbline_three .m_model {
+          font-size: 14px;
+          font-weight: bold;
+          margin-bottom: 10px; }
+        main .block_e .content .latest .lt_thumb .thumbline_three .rating {
+          overflow: hidden;
+          float: left;
+          width: 50%; }
+          main .block_e .content .latest .lt_thumb .thumbline_three .rating img {
+            display: block;
+            float: left; }
+        main .block_e .content .latest .lt_thumb .thumbline_three .comment {
+          overflow: hidden;
+          float: right;
+          width: 50%; }
+          main .block_e .content .latest .lt_thumb .thumbline_three .comment img {
+            display: block;
+            float: right;
+            margin-top: 2px;
+            margin: 2px 6px 0px 0px; }
+          main .block_e .content .latest .lt_thumb .thumbline_three .comment p {
+            float: right;
+            font-size: 14px; }
+      main .block_e .content .latest .lt_thumb .thumbline_four {
+        overflow: hidden; }
+        main .block_e .content .latest .lt_thumb .thumbline_four .ppp {
+          overflow: hidden;
+          float: left;
+          width: 50%; }
+          main .block_e .content .latest .lt_thumb .thumbline_four .ppp .pricesmall {
+            overflow: hidden;
+            font-size: 12px;
+            color: #b8bfc0;
+            margin-top: 10px; }
+            main .block_e .content .latest .lt_thumb .thumbline_four .ppp .pricesmall s {
+              font-size: 12px;
+              color: #b8bfc0; }
+            main .block_e .content .latest .lt_thumb .thumbline_four .ppp .pricesmall sup {
+              font-size: 8px;
+              color: #b8bfc0; }
+          main .block_e .content .latest .lt_thumb .thumbline_four .ppp .pricebig {
+            overflow: hidden;
+            font-size: 24px;
+            font-weight: bold;
+            color: #4bc1c1; }
+            main .block_e .content .latest .lt_thumb .thumbline_four .ppp .pricebig sup {
+              font-size: 14px; }
+          main .block_e .content .latest .lt_thumb .thumbline_four .ppp .instock {
+            overflow: hidden;
+            margin-top: 12px; }
+            main .block_e .content .latest .lt_thumb .thumbline_four .ppp .instock img {
+              display: block;
+              float: left;
+              margin: 1px 6px 0px 0px; }
+            main .block_e .content .latest .lt_thumb .thumbline_four .ppp .instock p {
+              float: left;
+              font-size: 11px;
+              color: #b8bfc0; }
+        main .block_e .content .latest .lt_thumb .thumbline_four .bb {
+          overflow: hidden;
+          float: left;
+          width: 50%; }
+          main .block_e .content .latest .lt_thumb .thumbline_four .bb img {
+            display: block;
+            float: left;
+            margin: 1px 5px 0px 0px; }
+          main .block_e .content .latest .lt_thumb .thumbline_four .bb p {
+            float: left;
+            font-size: 12px;
+            font-weight: bold;
+            font-family: Roboto, sans-serif;
+            color: #ffffff; }
+          main .block_e .content .latest .lt_thumb .thumbline_four .bb button {
+            padding: 8px 14px;
+            margin: 21px 0px 0px 10px;
+            border-radius: 18px;
+            background-color: #f13d70;
+            cursor: pointer;
+            border: none;
+            font-size: 12px;
+            font-weight: bold;
+            font-family: Roboto, sans-serif;
+            color: #ffffff; }
+  main .block_e .content .offer {
+    overflow: hidden; }
+    main .block_e .content .offer .fr_thumb:first-child {
+      margin: 0px; }
+    main .block_e .content .offer .fr_thumb {
+      overflow: hidden;
+      width: 208px;
+      height: 289px;
+      border: 1px solid #e8e8e8;
+      padding: 15px 30px;
+      float: left;
+      margin-left: 28px; }
+      main .block_e .content .offer .fr_thumb .thumbline_one {
+        overflow: hidden; }
+        main .block_e .content .offer .fr_thumb .thumbline_one p {
+          font-size: 12px;
+          font-weight: bold;
+          color: #ffffff;
+          border-radius: 5px;
+          float: left;
+          padding: 4px 12px;
+          background-color: #f13d70; }
+        main .block_e .content .offer .fr_thumb .thumbline_one img {
+          display: block;
+          float: right;
+          margin-top: 5px; }
+      main .block_e .content .offer .fr_thumb .thumbline_two {
+        overflow: hidden; }
+        main .block_e .content .offer .fr_thumb .thumbline_two img {
+          display: block;
+          margin: 20px auto 6px auto; }
+        main .block_e .content .offer .fr_thumb .thumbline_two .bb {
+          position: absolute;
+          padding: 8px 14px;
+          margin: -104px 0px 0px 58px;
+          border-radius: 18px;
+          background-color: #f13d70;
+          cursor: pointer;
+          border: none;
+          font-size: 12px;
+          font-weight: bold;
+          font-family: Roboto, sans-serif;
+          color: #ffffff; }
+          main .block_e .content .offer .fr_thumb .thumbline_two .bb img {
+            display: block;
+            float: left;
+            margin: 1px 5px 0px 0px; }
+          main .block_e .content .offer .fr_thumb .thumbline_two .bb p {
+            float: left;
+            font-size: 12px;
+            font-weight: bold;
+            font-family: Roboto, sans-serif;
+            color: #ffffff; }
+      main .block_e .content .offer .fr_thumb .thumbline_three {
+        overflow: hidden; }
+        main .block_e .content .offer .fr_thumb .thumbline_three .m_model {
+          font-size: 14px;
+          font-weight: bold;
+          margin: 23px 0px 10px 0px;
+          text-align: center; }
+        main .block_e .content .offer .fr_thumb .thumbline_three .pricebig {
+          overflow: hidden;
+          font-size: 24px;
+          font-weight: bold;
+          color: #4bc1c1;
+          text-align: center; }
+          main .block_e .content .offer .fr_thumb .thumbline_three .pricebig sup {
+            font-size: 14px; }

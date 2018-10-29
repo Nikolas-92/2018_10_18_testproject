@@ -1,0 +1,436 @@
+body {
+  min-width: 1920px;
+}
+
+// CONTENT start
+main {
+  .block_a {
+    background-color: #f6f6f6;
+    .content {
+      height: 100px;
+    }
+  }
+  .block_b {
+    .content {
+      width: 100%;
+      margin: 0px;
+      overflow: hidden;
+      .watch_look {
+        background-size: cover;
+        width: 620px;
+        height: 349px;
+        float: left;
+        margin-top: 30px;
+        .watch_dscr {
+          overflow: hidden;
+          float: left;
+          margin: 146px 0px 0px 52px;
+        }
+        .read_more {
+          display: block;
+          float: left;
+          font-size: 18px;
+          color: #ffffff;
+          text-decoration: underline;
+          float: right;
+          margin: 85px 48px 0px 0px;
+          a {
+            overflow: hidden;
+          }
+          img {
+            float: right;
+            margin: 5px 0px 0px 10px;
+          }
+        }
+        button {
+          display: block;
+          float: left;
+          background-color: #ffffff;
+          color: #67797a;
+          font-size: 14px;
+          font-weight: bold;
+          border: none;
+          border-radius: 4px;
+          margin-top: 7px;
+          width: 95px;
+          height: 37px;
+          text-align: center;
+          cursor: pointer;
+        }
+        p {
+          float: left;
+          font-size: 18px;
+          color: #ffffff;
+          width: 368px;
+          margin-top: 7px;
+        }
+        img {
+          margin: 0px 25px 0px 15px;
+          float: left;
+        }
+      }
+      #wl_one {
+        background-image: url("../img/watch2.png");
+      }
+      #wl_two {
+        background-image: url("../img/watch3.png");
+        height: 351px;
+        margin: 30px 30px 0 30px;
+        p {
+          width: 388px;
+        }
+      }
+      #wl_three {
+        background-image: url("../img/watch4.png");
+      }
+    }
+  }
+  .block_c {
+    .content {
+      overflow: hidden;
+      .hdr {
+        font-family: Roboto, sans-serif;
+        font-size: 24px;
+        text-align: center;
+        margin: 80px 0px 75px 0px;
+      }
+      .ctlg {
+        float: left;
+        .ctlg_imgwrapper {
+          display: block;
+          float: left;
+          width: 234px;
+          height: 220px;
+        }
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+        a {
+          display: block;
+          float: left;
+          clear: both;
+          overflow: hidden;
+          width: 157px;
+          font-size: 18px;
+          font-family: Roboto, sans-serif;
+          text-align: center;
+          color: #67797a;
+          margin: 0px 38px;
+        }
+      }
+    }
+  }
+  .block_d{
+    background-color: #fbfbfb;
+    .content {
+      overflow: hidden;
+      width: 100%;
+      margin: 0px;
+      .hdr {
+        font-family: Roboto, sans-serif;
+        font-size: 24px;
+        text-align: center;
+        padding: 80px 0px 55px 0px;
+        background-color: #ffffff;
+      }
+      .category {
+        width: 1170px;
+        margin: 0 auto;
+        overflow: hidden;
+        .ctgr {
+          overflow: hidden;
+          float: left;
+          width: 160px;
+          margin: 53px 0px 58px 92px;
+          .ctgr_imgwrapper {
+            display: block;
+            float: left;
+            min-width: 102px;
+            min-height: 89px;
+            width: 100%;
+            height: 100%;
+          }
+          img {
+            display: block;
+            //float: left;
+            margin: 0 auto;
+          }
+          p {
+            float: left;
+            clear: both;
+            width: 100%;
+            text-align: center;
+          }
+          .ctgr_type {
+            font-family: Roboto, sans-serif;
+            font-size: 18px;
+            margin: 27px 0px 20px 0px;
+            float: left;
+            clear: both;
+            width: 100%;
+            text-align: center;
+            color: #67797a;
+          }
+          .ctgr_context {
+            font-family: Myriad Pro, sans-serif;
+            font-size: 11px;
+          }
+        }
+        .ctgr:first-child {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+  .block_e {
+    .content {
+      overflow: hidden;
+      .hdr {
+        font-family: Roboto, sans-serif;
+        font-size: 24px;
+        text-align: center;
+        margin: 45px 0px;
+      }
+      .thumbwrapper {
+        overflow: hidden;
+        width: 100%;
+      }
+      .latest {
+        overflow: hidden;
+        .lt_thumb:first-child {
+          margin: 0px;
+        }
+        .lt_thumb {
+          overflow: hidden;
+          width: 209px;
+          height: 383px;
+          border: 1px solid #e8e8e8;
+          padding: 15px 30px;
+          float: left;
+          margin-left: 28px;
+          .thumbline_one {
+            overflow: hidden;
+            p {
+              font-size: 12px;
+              font-weight: bold;
+              color: #ffffff;
+              border-radius: 5px;
+              float: left;
+              padding: 4px 12px;
+              background-color: #f13d70;
+            }
+            img {
+              display: block;
+              float: right;
+            }
+          }
+          .thumbline_two {
+            img {
+              display: block;
+              margin: 20px auto 6px auto;
+            }
+          }
+          .thumbline_three {
+            overflow: hidden;
+            border-bottom: 1px solid #e8e8e8;
+            padding-bottom: 5px;
+            .m_name {
+              display: block;
+              font-size: 12px;
+              color: #4bc1c1;
+              margin-top: 23px;
+            }
+            .m_model {
+              font-size: 14px;
+              font-weight: bold;
+              margin-bottom: 10px;
+            }
+            .rating {
+              overflow: hidden;
+              float: left;
+              width: 50%;
+              img {
+                display: block;
+                float: left;
+              }
+            }
+            .comment {
+              overflow: hidden;
+              float: right;
+              width: 50%;
+              img {
+                display: block;
+                float: right;
+                margin-top: 2px;
+                margin: 2px 6px 0px 0px;
+              }
+              p {
+                float: right;
+                font-size: 14px;
+              }
+            }
+          }
+          .thumbline_four {
+            overflow: hidden;
+            .ppp {
+              overflow: hidden;
+              float: left;
+              width: 50%;
+              .pricesmall {
+                overflow: hidden;
+                font-size: 12px;
+                color: #b8bfc0;
+                margin-top: 10px;
+                s {
+                  font-size: 12px;
+                  color: #b8bfc0;
+                }
+                sup {
+                  font-size: 8px;
+                  color: #b8bfc0;
+                }
+              }
+              .pricebig {
+                overflow: hidden;
+                font-size: 24px;
+                font-weight: bold;
+                color: #4bc1c1;
+                sup {
+                  font-size: 14px;
+                }
+              }
+              .instock {
+                overflow: hidden;
+                margin-top: 12px;
+                img {
+                  display: block;
+                  float: left;
+                  margin: 1px 6px 0px 0px;
+                }
+                p {
+                  float: left;
+                  font-size: 11px;
+                  color: #b8bfc0;
+                }
+              }
+            }
+            .bb {
+              overflow: hidden;
+              float: left;
+              width: 50%;
+              img {
+                display: block;
+                float: left;
+                margin: 1px 5px 0px 0px;
+              }
+              p {
+                float: left;
+                font-size: 12px;
+                font-weight: bold;
+                font-family: Roboto, sans-serif;
+                color: #ffffff;
+              }
+              button {
+                padding: 8px 14px;
+                margin: 21px 0px 0px 10px;
+                border-radius: 18px;
+                background-color: #f13d70;
+                cursor: pointer;
+                border: none;
+                font-size: 12px;
+                font-weight: bold;
+                font-family: Roboto, sans-serif;
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+      .offer {
+        overflow: hidden;
+        .fr_thumb:first-child {
+          margin: 0px;
+        }
+        .fr_thumb {
+          overflow: hidden;
+          width: 208px;
+          height: 289px;
+          border: 1px solid #e8e8e8;
+          padding: 15px 30px;
+          float: left;
+          margin-left: 28px;
+          .thumbline_one {
+            overflow: hidden;
+            p {
+              font-size: 12px;
+              font-weight: bold;
+              color: #ffffff;
+              border-radius: 5px;
+              float: left;
+              padding: 4px 12px;
+              background-color: #f13d70;
+            }
+            img {
+              display: block;
+              float: right;
+              margin-top: 5px;
+            }
+          }
+          .thumbline_two {
+            overflow: hidden;
+            img {
+              display: block;
+              margin: 20px auto 6px auto;
+            }
+            .bb {
+              position: absolute;
+              padding: 8px 14px;
+              margin: -104px 0px 0px 58px;
+              border-radius: 18px;
+              background-color: #f13d70;
+              cursor: pointer;
+              border: none;
+              font-size: 12px;
+              font-weight: bold;
+              font-family: Roboto, sans-serif;
+              color: #ffffff;
+              img {
+                display: block;
+                float: left;
+                margin: 1px 5px 0px 0px;
+              }
+              p {
+                float: left;
+                font-size: 12px;
+                font-weight: bold;
+                font-family: Roboto, sans-serif;
+                color: #ffffff;
+              }
+            }
+          }
+          .thumbline_three {
+            overflow: hidden;
+            .m_model {
+              font-size: 14px;
+              font-weight: bold;
+              margin: 23px 0px 10px 0px;
+              text-align: center;
+            }
+            .pricebig {
+              overflow: hidden;
+              font-size: 24px;
+              font-weight: bold;
+              color: #4bc1c1;
+              text-align: center;
+              sup {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// CONTENT end
