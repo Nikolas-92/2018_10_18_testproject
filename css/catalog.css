@@ -371,6 +371,9 @@ main .block_f {
           margin: 45px 0px;
           float: left;
           width: 50%; }
+        main .block_f .content .hdrwrapper .hdrwrappercenter p:last-child {
+          width: 473px;
+          margin-left: 112px; }
     main .block_f .content .buyercomment {
       overflow: hidden;
       width: 50%;
@@ -504,3 +507,29 @@ main .block_f {
               float: left;
               font-size: 14px;
               margin: 0px 0px 3px 10px; }
+      main .block_f .content .paymentdelivery .moreaboutdlvr {
+        overflow: hidden;
+        width: 473px;
+        margin-left: 112px; }
+        main .block_f .content .paymentdelivery .moreaboutdlvr a {
+          display: block;
+          float: left;
+          text-decoration: underline;
+          font-size: 14px;
+          margin: 26px 12px 0px 0px; }
+        main .block_f .content .paymentdelivery .moreaboutdlvr img {
+          display: block;
+          float: left;
+          margin-top: 30px; }
+
+main .block_g .content {
+  overflow: hidden; }
+  main .block_g .content p {
+    font-size: 14px;
+    margin-bottom: 20px; }
+  main .block_g .content a {
+    font-size: 14px;
+    text-decoration: underline; }
+  main .block_g .content .textwrapper {
+    overflow: hidden;
+    margin: 95px 0px 105px 0px; }

@@ -458,6 +458,10 @@ main {
             float: left;
             width: 50%;
           }
+          p:last-child {
+            width: 473px;
+            margin-left: 112px;
+          }
         }
       }
       .buyercomment {
@@ -626,6 +630,40 @@ main {
             }
           }
         }
+        .moreaboutdlvr {
+          overflow: hidden;
+          width: 473px;
+          margin-left: 112px;
+          a {
+            display: block;
+            float: left;
+            text-decoration: underline;
+            font-size: 14px;
+            margin: 26px 12px 0px 0px;
+          }
+          img {
+            display: block;
+            float: left;
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+  .block_g {
+    .content {
+      overflow: hidden;
+      p {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+      a {
+        font-size: 14px;
+        text-decoration: underline;
+      }
+      .textwrapper {
+        overflow: hidden;
+        margin: 95px 0px 105px 0px;
       }
     }
   }
