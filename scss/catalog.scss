@@ -552,6 +552,80 @@ main {
         overflow: hidden;
         width: 50%;
         float: left;
+        .payment {
+          overflow: hidden;
+          width: 473px;
+          margin-left: 112px;
+          img {
+            display: block;
+            float: left;
+            margin-right: 28px;
+          }
+          .paypalvisa {
+            margin-top: 6px;
+          }
+          .acceptpayhdr {
+            font-size: 24px;
+            margin: 30px 0px 26px 0px;
+          }
+          .warning {
+            overflow: hidden;
+            float: left;
+            width: 100%;
+            margin-top: 26px;
+            p {
+              font-size: 14px;
+              color: #4bc1c1;
+              text-align: left;
+              width: 426px;
+              float: left;
+            }
+            img {
+              margin-right: 23px
+            }
+          }
+        }
+        .delivery {
+          overflow: hidden;
+          width: 473px;
+          margin-left: 112px;
+          .deliveryhdr {
+            font-size: 24px;
+            margin: 30px 0px 22px 0px;
+          }
+          .deliverydscr {
+            font-size: 12px;
+            font-family: Myriad Pro, sans-serif;
+          }
+          .trucktype {
+            overflow: hidden;
+            margin-top: 42px;
+            .truck {
+              overflow: hidden;
+              float: left;
+              img {
+                display: block;
+                float: left;
+              }
+            }
+            .type {
+              overflow: hidden;
+              float: left;
+              margin-left: 30px;
+              img {
+                display: block;
+                float: left;
+                clear: left;
+                margin-top: 2px;
+              }
+              p {
+                float: left;
+                font-size: 14px;
+                margin: 0px 0px 3px 10px;
+              }
+            }
+          }
+        }
       }
     }
   }
