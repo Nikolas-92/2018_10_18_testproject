@@ -105,7 +105,7 @@ header .block_a .content {
       display: inline-block;
       margin: 0px 3px; }
   header .block_a .content .cart {
-    margin: 30px 0px 0px 33px; }
+    margin: 30px 0px 0px 30px; }
     header .block_a .content .cart img {
       display: block;
       float: left; }
@@ -118,7 +118,7 @@ header .block_a .content {
       font-size: 11px;
       background-color: #b8bfc0;
       border-radius: 100%;
-      width: 13px;
+      padding: 1px 4px;
       text-align: center;
       color: #ffffff; }
     header .block_a .content .cart .margin_left {

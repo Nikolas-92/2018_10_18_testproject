@@ -7,7 +7,160 @@ main {
   .block_a {
     background-color: #f6f6f6;
     .content {
-      height: 100px;
+      overflow: hidden;
+      #lsb {
+        background-image: url("../img/slide_l.png");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      #rsb {
+        background-image: url("../img/slide_r.png");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .directionslide {
+        overflow: hidden;
+        float: left;
+      }
+      .slidebutton {
+        overflow: hidden;
+        background-color: #e8e8e8;
+        border-radius: 25px;
+        width: 40px;
+        height: 40px;
+        margin-top: 222px;
+        cursor: pointer;
+        img {
+          display: block;
+          float: left;
+        }
+      }
+      .slidebutton:hover {
+        background-color: #f13d70;
+      }
+      .slide {
+        overflow: hidden;
+        float: left;
+        //width: 336px;
+        width: 1090px;
+        .slidedscr {
+          overflow: hidden;
+          float: left;
+          margin: 120px 0px 0px 55px;
+          .brand {
+            overflow: hidden;
+            a {
+              display: block;
+              float: left;
+              font-size: 60px;
+              font-weight: bold;
+              font-family: Roboto, sans-serif;
+            }
+            span {
+              display: block;
+              float: left;
+              font-size: 10px;
+              padding: 2px 6px;
+              background-color: #f13d70;
+              color: #ffffff;
+              border-radius: 4px;
+              margin-left: 4px;
+            }
+          }
+          .branddscr {
+            p {
+              font-family: Myriad Pro, sans-serif;
+              font-size: 18px;
+              text-align: left;
+            }
+          }
+          .pricebig {
+            font-size: 48px;
+            font-family: Roboto, sans-serif;
+            margin: 22px 0px;
+            sup {
+              font-size: 32px;
+            }
+          }
+          .pricebig:first-letter {
+            margin-right: 12px;
+          }
+          .buymore {
+            overflow: hidden;
+            button {
+              padding: 12px 40px 12px 40px;
+              cursor: pointer;
+              font-size: 14px;
+              font-weight: bold;
+              color: #b8bfc0;
+              border-radius: 25px;
+              border: 2px solid #b8bfc0;
+              float: left;
+            }
+            button:hover {
+              border: 2px solid #e33b6a;
+              background-color: #e33b6a;
+              color: #ffffff;
+            }
+            img {
+              display: block;
+              float: left;
+              margin: 0px 8px 0px 0px;
+            }
+            #jdj {
+              padding: 12px 49px 12px 40px;
+              border: 2px solid #e33b6a;
+              background-color: #e33b6a;
+              color: #ffffff;
+              margin-right: 14px;
+            }
+          }
+        }
+        .slidepreview {
+          overflow: hidden;
+          float: left;
+          margin: 84px 0px 0px 147px;
+          .slidepreviewshadow {
+            display: block;
+            float: left;
+            position: absolute;
+          }
+          #shadowone {
+            margin: 340px 0px 0px 60px;
+          }
+          #shadowtwo {
+            margin: 364px 0px 0px 4px;
+          }
+          img {
+            display: block;
+            float: left;
+          }
+        }
+        .slidefastnav {
+          overflow: hidden;
+          clear: both;
+          float: left;
+          width: 100%;
+          margin: 61px 0px 70px 0px;
+          .slidefastnavwrapper {
+            overflow: hidden;
+            margin: 0px auto;
+            width: 60px;
+          }
+          .slidefastbutton {
+            width: 15px;
+            height: 15px;
+            background-color: #e8e8e8;
+            border-radius: 25px;
+            margin-right: 5px;
+            float: left;
+            cursor: pointer;
+          }
+          .slidefastbutton:hover {
+            background-color: #e33b6a;
+          }
+        }
+      }
     }
   }
   .block_b {
