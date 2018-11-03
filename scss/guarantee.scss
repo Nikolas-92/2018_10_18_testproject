@@ -1,0 +1,148 @@
+// CONTENT start
+main {
+  .block_a {
+    .content {
+      height: 116px;
+      div:first-child {
+        font-size: 14px;
+        padding-top: 30px;
+        p {
+          display: inline;
+        }
+        a {
+          color: #67797a;
+          text-decoration: underline;
+        }
+      }
+      div:last-child {
+        font-size: 24px;
+        padding-top: 20px;
+      }
+      h2 {
+        display: inline;
+        font-size: 24px;
+      }
+      #m_smbl {
+        margin: 0px 5px;
+      }
+    }
+  }
+  .block_b {
+    background-color: #fbfbfb;
+    overflow: hidden;
+    .content {
+      min-height: 312px;
+      overflow: hidden;
+      img {
+        display: block;
+        float: left;
+        margin-top: 31px;
+      }
+      .handshake {
+        margin-top: 74px;
+        overflow: hidden;
+        float: left;
+        max-width: 920px;
+        p {
+          font-size: 14px;
+          margin-left: 41px;
+        }
+        p:first-child {
+          margin-bottom: 24px;
+        }
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .block_c {
+    .content {
+      overflow: hidden;
+      border-bottom: 1px solid #e8e8e8;
+      .tablehdr {
+        overflow: hidden;
+        h3 {
+          font-size: 18px;
+          margin-top: 60px;
+        }
+      }
+      .tablewrapper {
+        overflow: hidden;
+        table {
+          width: 100%;
+        }
+        td {
+          font-size: 14px;
+          padding: 20px 0px;
+          float: left;
+          width: 189px;
+        }
+        tr:nth-child(even) {
+            background-color: #fbfbfb;
+        }
+        tr:first-child td {
+          font-weight: bold;
+        }
+        tr td:first-child {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+  .block_d {
+    .content {
+      min-height: 160px;
+      .ud {
+        font-size: 14px;
+        font-weight: normal;
+        color: #b8bfc0;
+        display: block;
+      }
+      img {
+        display: block;
+        float: left;
+        margin-top: 29px;
+      }
+      .d_t {
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 0px;
+        display: inline;
+      }
+      .time {
+        color: #4bc1c1;
+        margin-left: 10px;
+      }
+      .phone {
+        color: #4bc1c1;
+        margin-left: 3px;
+      }
+      .hint {
+        display: block;
+        font-size: 10px;
+        padding-top: 3px;
+        color: #b8bfc0;
+      }
+      .schedule {
+        display: inline-block;
+        margin-top: 27px;
+        overflow: hidden;
+        div {
+          float: left;
+          margin: 29px 0px 0px 13px;
+        }
+      }
+      .consultation {
+        display: inline-block;
+        overflow: hidden;
+        margin: 27px 0px 0px 85px;
+        div {
+          float: left;
+          margin: 29px 0px 0px 13px;
+        }
+      }
+    }
+  }
+}
+// CONTENT end

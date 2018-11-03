@@ -1,0 +1,107 @@
+main .block_a .content {
+  height: 116px; }
+  main .block_a .content div:first-child {
+    font-size: 14px;
+    padding-top: 30px; }
+    main .block_a .content div:first-child p {
+      display: inline; }
+    main .block_a .content div:first-child a {
+      color: #67797a;
+      text-decoration: underline; }
+  main .block_a .content div:last-child {
+    font-size: 24px;
+    padding-top: 20px; }
+  main .block_a .content h2 {
+    display: inline;
+    font-size: 24px; }
+  main .block_a .content #m_smbl {
+    margin: 0px 5px; }
+
+main .block_b {
+  background-color: #fbfbfb;
+  overflow: hidden; }
+  main .block_b .content {
+    min-height: 312px;
+    overflow: hidden; }
+    main .block_b .content img {
+      display: block;
+      float: left;
+      margin-top: 31px; }
+    main .block_b .content .handshake {
+      margin-top: 74px;
+      overflow: hidden;
+      float: left;
+      max-width: 920px; }
+      main .block_b .content .handshake p {
+        font-size: 14px;
+        margin-left: 41px; }
+      main .block_b .content .handshake p:first-child {
+        margin-bottom: 24px; }
+      main .block_b .content .handshake a {
+        text-decoration: underline; }
+
+main .block_c .content {
+  overflow: hidden;
+  border-bottom: 1px solid #e8e8e8; }
+  main .block_c .content .tablehdr {
+    overflow: hidden; }
+    main .block_c .content .tablehdr h3 {
+      font-size: 18px;
+      margin-top: 60px; }
+  main .block_c .content .tablewrapper {
+    overflow: hidden; }
+    main .block_c .content .tablewrapper table {
+      width: 100%; }
+    main .block_c .content .tablewrapper td {
+      font-size: 14px;
+      padding: 20px 0px;
+      float: left;
+      width: 189px; }
+    main .block_c .content .tablewrapper tr:nth-child(even) {
+      background-color: #fbfbfb; }
+    main .block_c .content .tablewrapper tr:first-child td {
+      font-weight: bold; }
+    main .block_c .content .tablewrapper tr td:first-child {
+      padding-left: 30px; }
+
+main .block_d .content {
+  min-height: 160px; }
+  main .block_d .content .ud {
+    font-size: 14px;
+    font-weight: normal;
+    color: #b8bfc0;
+    display: block; }
+  main .block_d .content img {
+    display: block;
+    float: left;
+    margin-top: 29px; }
+  main .block_d .content .d_t {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 0px;
+    display: inline; }
+  main .block_d .content .time {
+    color: #4bc1c1;
+    margin-left: 10px; }
+  main .block_d .content .phone {
+    color: #4bc1c1;
+    margin-left: 3px; }
+  main .block_d .content .hint {
+    display: block;
+    font-size: 10px;
+    padding-top: 3px;
+    color: #b8bfc0; }
+  main .block_d .content .schedule {
+    display: inline-block;
+    margin-top: 27px;
+    overflow: hidden; }
+    main .block_d .content .schedule div {
+      float: left;
+      margin: 29px 0px 0px 13px; }
+  main .block_d .content .consultation {
+    display: inline-block;
+    overflow: hidden;
+    margin: 27px 0px 0px 85px; }
+    main .block_d .content .consultation div {
+      float: left;
+      margin: 29px 0px 0px 13px; }
