@@ -25,10 +25,98 @@ main {
       .settingpanel {
         overflow: hidden;
         float: left;
-        width: 270px;
-        height: 100px;
+        width: 214px;
         background-color: #fbfbfb;
         margin-top: 6px;
+        padding: 28px;
+        .setcmpr {
+          overflow: hidden;
+          border-bottom: 1px solid #e8e8e8;
+          .setcmprhdr {
+            font-size: 14px;
+            margin: 0px 0px 20px 0px;
+          }
+          .setitem {
+            overflow: hidden;
+            margin-top: 14px;
+            p {
+              float: left;
+              font-size: 12px;
+              margin-top: 10px;
+            }
+            p:first-child {
+              color: #f13d70;
+              cursor: pointer;
+              font-size: 13px;
+            }
+            img {
+              display: block;
+              float: left;
+              width: 28px;
+              height: 36px;
+              margin: 0px 10px 0px 14px;
+            }
+          }
+          button {
+            display: block;
+            float: left;
+            cursor: pointer;
+            text-decoration: underline;
+            background-color: #fbfbfb;
+            border: none;
+            padding: 6px 23px;
+            font-size: 12px;
+            border-radius: 4px;
+            margin: 20px 0px 30px 0px;
+          }
+          button:last-child {
+            margin-left: 12px;
+          }
+          button:hover {
+            background-color: #f13d70;
+            text-decoration: none;
+            color: #ffffff;
+          }
+        }
+        .filter {
+          overflow: hidden;
+          border-bottom: 1px solid #e8e8e8;
+          .filterhdr {
+            font-size: 14px;
+            margin: 20px 0px 0px 0px;
+          }
+          .filtercontainer {
+            overflow: hidden;
+            padding: 12px 0px;
+            width: 100%;
+            .filteritem {
+              overflow: hidden;
+              float: left;
+              p {
+                float: left;
+                font-size: 14px;
+              }
+              p:first-child {
+                color: #f13d70;
+                cursor: pointer;
+                font-size: 13px;
+                margin: 1px 10px 0px 0px;
+              }
+            }
+          }
+          button {
+            display: block;
+            float: left;
+            cursor: pointer;
+            background-color: #f13d70;
+            border: none;
+            padding: 6px 25px;
+            font-size: 12px;
+            color: #ffffff;
+            border-radius: 4px;
+            margin: 2px 0px 20px 30px;
+          }
+        }
       }
       .comparisonpanel {
         overflow: hidden;

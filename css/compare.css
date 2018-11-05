@@ -16,10 +16,82 @@ main .block_b .content {
   main .block_b .content .settingpanel {
     overflow: hidden;
     float: left;
-    width: 270px;
-    height: 100px;
+    width: 214px;
     background-color: #fbfbfb;
-    margin-top: 6px; }
+    margin-top: 6px;
+    padding: 28px; }
+    main .block_b .content .settingpanel .setcmpr {
+      overflow: hidden;
+      border-bottom: 1px solid #e8e8e8; }
+      main .block_b .content .settingpanel .setcmpr .setcmprhdr {
+        font-size: 14px;
+        margin: 0px 0px 20px 0px; }
+      main .block_b .content .settingpanel .setcmpr .setitem {
+        overflow: hidden;
+        margin-top: 14px; }
+        main .block_b .content .settingpanel .setcmpr .setitem p {
+          float: left;
+          font-size: 12px;
+          margin-top: 10px; }
+        main .block_b .content .settingpanel .setcmpr .setitem p:first-child {
+          color: #f13d70;
+          cursor: pointer;
+          font-size: 13px; }
+        main .block_b .content .settingpanel .setcmpr .setitem img {
+          display: block;
+          float: left;
+          width: 28px;
+          height: 36px;
+          margin: 0px 10px 0px 14px; }
+      main .block_b .content .settingpanel .setcmpr button {
+        display: block;
+        float: left;
+        cursor: pointer;
+        text-decoration: underline;
+        background-color: #fbfbfb;
+        border: none;
+        padding: 6px 23px;
+        font-size: 12px;
+        border-radius: 4px;
+        margin: 20px 0px 30px 0px; }
+      main .block_b .content .settingpanel .setcmpr button:last-child {
+        margin-left: 12px; }
+      main .block_b .content .settingpanel .setcmpr button:hover {
+        background-color: #f13d70;
+        text-decoration: none;
+        color: #ffffff; }
+    main .block_b .content .settingpanel .filter {
+      overflow: hidden;
+      border-bottom: 1px solid #e8e8e8; }
+      main .block_b .content .settingpanel .filter .filterhdr {
+        font-size: 14px;
+        margin: 20px 0px 0px 0px; }
+      main .block_b .content .settingpanel .filter .filtercontainer {
+        overflow: hidden;
+        padding: 12px 0px;
+        width: 100%; }
+        main .block_b .content .settingpanel .filter .filtercontainer .filteritem {
+          overflow: hidden;
+          float: left; }
+          main .block_b .content .settingpanel .filter .filtercontainer .filteritem p {
+            float: left;
+            font-size: 14px; }
+          main .block_b .content .settingpanel .filter .filtercontainer .filteritem p:first-child {
+            color: #f13d70;
+            cursor: pointer;
+            font-size: 13px;
+            margin: 1px 10px 0px 0px; }
+      main .block_b .content .settingpanel .filter button {
+        display: block;
+        float: left;
+        cursor: pointer;
+        background-color: #f13d70;
+        border: none;
+        padding: 6px 25px;
+        font-size: 12px;
+        color: #ffffff;
+        border-radius: 4px;
+        margin: 2px 0px 20px 30px; }
   main .block_b .content .comparisonpanel {
     overflow: hidden;
     float: left;
