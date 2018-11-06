@@ -5,7 +5,10 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/compare.css">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
     <script type="text/javascript" src="./js/style.js"></script>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui.js"></script>
     <title>Compare</title>
   </head>
   <body>
@@ -131,6 +134,29 @@
                 </div>
               </div>
               <button type="button" name="filterreset">Сбросить фильтры</button>
+            </div>
+            <div class="pricerange">
+              <p class="pricerangehdr">Цена</p>
+              <div class="priceholderwrapper">
+                <div class="pricefromto">
+                  <sup>от</sup>
+                  <div class="priceftwrapper">
+                    <input id="pricefrom" type="text" name="pricefrom" value="0">
+                    <sup>руб</sup>
+                  </div>
+                </div>
+                <div class="pricefromto">
+                  <sup>до</sup>
+                  <div class="priceftwrapper">
+                    <input id="priceto" type="text" name="priceto" value="10000">
+                    <sup>руб</sup>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="priceslider">
+              <div id="slider-range"></div>
+              <div class="sliderornament"></div><div class="sliderornament"></div><div class="sliderornament"></div><div class="sliderornament"></div><div class="sliderornament"></div><div class="sliderornament"></div>
             </div>
           </div>
           <div class="comparisonpanel">

@@ -117,6 +117,80 @@ main {
             margin: 2px 0px 20px 30px;
           }
         }
+        .pricerange {
+          overflow: hidden;
+          .pricerangehdr {
+            font-size: 14px;
+            margin: 20px 0px 0px 0px;
+          }
+          .priceholderwrapper {
+            overflow: hidden;
+            .pricefromto {
+              overflow: hidden;
+              float: left;
+              max-width: 50%;
+              margin-top: 20px;
+              sup {
+                font-size: 12px;
+                color: #b8bfc0;
+                display: block;
+                float: left;
+              }
+              sup:first-child {
+                margin-right: 12px;
+              }
+              input {
+                width: 50px;
+                display: block;
+                float: left;
+                background-color: #fbfbfb;
+                border: none;
+                font-size: 14px;
+              }
+              .priceftwrapper {
+                overflow: hidden;
+                float: left;
+                border-bottom: 1px solid #e8e8e8;
+              }
+            }
+            .pricefromto:first-child {
+              margin: 20px 22px 0px 0px;
+            }
+          }
+        }
+        .priceslider {
+          overflow: hidden;
+          width: 100%;
+          min-height: 10px;
+          padding: 20px 0px;
+          border-bottom: 1px solid #e8e8e8;
+          div {
+            background-color: #f13d70;
+            border: none;
+          }
+          span {
+            background-image: url("../img/slider.png");
+            background-repeat: no-repeat;
+            border: none;
+            height: 13px;
+            width: 5px;
+            top: -0.5em;
+            margin: 0px;
+          }
+          #slider-range {
+            height: 1px;
+            margin-top: 5px;
+            width: 209px;
+          }
+          .sliderornament {
+            width: 30px;
+            height: 10px;
+            float: left;
+            border-right: 1px solid #e8e8e8;
+            background-color: #fbfbfb;
+            margin-top: -5px;
+          }
+        }
       }
       .comparisonpanel {
         overflow: hidden;

@@ -31,4 +31,19 @@ document.addEventListener("DOMContentLoaded", () => {
   bundle[2].onmouseleave = () => {
     bundle[3].style.backgroundColor = "#b8bfc0";
   }
+
+
+  // PAGE start
+  // compare.html
+  $("#slider-range").slider({
+    range: true,
+    min: 0,
+    max: 10000,
+    values: [1, 9999],
+    slide: (event, ui) => {
+      $("#pricefrom").val(ui.values[0]);
+      $("#priceto").val(ui.values[1]);
+    }
+  });
+  // PAGE end
 });
