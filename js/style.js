@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-  // PAGE start
-  // compare.html
+  // PAGE compare.html start
+  // price range slider
   $("#slider-range").slider({
     range: true,
     min: 0,
@@ -45,5 +45,16 @@ document.addEventListener("DOMContentLoaded", () => {
       $("#priceto").val(ui.values[1]);
     }
   });
-  // PAGE end
+
+  // filter item remove testing
+  var domEl = document.querySelector(".filteritem").children[0];
+  domEl.addEventListener("click", () => {
+    domEl.parentElement.remove();
+  });
+
+  // accordion
+  $(".accordion").accordion({
+    icons: { "header": "accordionpassivearrow", "activeHeader": "accordionactivearrow" }
+  });
+  // PAGE compare.html end
 });

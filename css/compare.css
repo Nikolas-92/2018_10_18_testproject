@@ -152,6 +152,52 @@ main .block_b .content {
         border-right: 1px solid #e8e8e8;
         background-color: #fbfbfb;
         margin-top: -5px; }
+    main .block_b .content .settingpanel .bonussettings {
+      overflow: hidden;
+      width: 100%; }
+      main .block_b .content .settingpanel .bonussettings .accordion {
+        font-size: 14px; }
+        main .block_b .content .settingpanel .bonussettings .accordion p {
+          background-color: #fbfbfb;
+          color: #67797a;
+          border: none;
+          margin: 0px;
+          padding: 15px 0px;
+          border-top: 1px solid #e8e8e8; }
+        main .block_b .content .settingpanel .bonussettings .accordion p:first-child {
+          border-top: none; }
+        main .block_b .content .settingpanel .bonussettings .accordion .accordionpassivearrow {
+          background-image: url("../img/uiaracc.png");
+          background-repeat: no-repeat;
+          background-position: 0px 6px; }
+        main .block_b .content .settingpanel .bonussettings .accordion .accordionactivearrow {
+          background-image: url("../img/uiaracc_a.png");
+          background-repeat: no-repeat;
+          background-position: 0px 6px; }
+        main .block_b .content .settingpanel .bonussettings .accordion label {
+          display: block;
+          cursor: pointer;
+          margin: 13px 0px; }
+        main .block_b .content .settingpanel .bonussettings .accordion label:first-child {
+          margin: 5px 0px 13px 0px; }
+        main .block_b .content .settingpanel .bonussettings .accordion div {
+          padding: 0px;
+          border: none;
+          background-color: #fbfbfb; }
+        main .block_b .content .settingpanel .bonussettings .accordion .checkmark {
+          overflow: hidden;
+          width: 13px;
+          height: 13px;
+          display: inline-block;
+          background-image: url("../img/checkbox.png");
+          background-position-x: 0px;
+          margin: 0px 10px 0px 0px; }
+        main .block_b .content .settingpanel .bonussettings .accordion input {
+          opacity: 0;
+          position: absolute;
+          left: 130px; }
+        main .block_b .content .settingpanel .bonussettings .accordion input:checked + div {
+          background-position-x: 13px; }
   main .block_b .content .comparisonpanel {
     overflow: hidden;
     float: left;
