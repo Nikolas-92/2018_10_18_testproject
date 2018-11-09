@@ -34,27 +34,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // PAGE compare.html start
-  // price range slider
-  $("#slider-range").slider({
-    range: true,
-    min: 0,
-    max: 10000,
-    values: [1, 9999],
-    slide: (event, ui) => {
-      $("#pricefrom").val(ui.values[0]);
-      $("#priceto").val(ui.values[1]);
-    }
-  });
+  try {
+    // price range slider
+    $("#slider-range").slider({
+      range: true,
+      min: 0,
+      max: 10000,
+      values: [1, 9999],
+      slide: (event, ui) => {
+        $("#pricefrom").val(ui.values[0]);
+        $("#priceto").val(ui.values[1]);
+      }
+    });
 
-  // filter item remove testing
-  var domEl = document.querySelector(".filteritem").children[0];
-  domEl.addEventListener("click", () => {
-    domEl.parentElement.remove();
-  });
+    // filter item remove testing
+    var domEl = document.querySelector(".filteritem").children[0];
+    domEl.addEventListener("click", () => {
+      domEl.parentElement.remove();
+    });
 
-  // accordion
-  $(".accordion").accordion({
-    icons: { "header": "accordionpassivearrow", "activeHeader": "accordionactivearrow" }
-  });
+    // accordion
+    $(".accordion").accordion({
+      icons: { "header": "accordionpassivearrow", "activeHeader": "accordionactivearrow" }
+    });
+  } catch (error) {
+
+  }
   // PAGE compare.html end
+
+
+  // PAGE contact.html start
+  try {
+    $("#mobilephone").on("focus", () => {
+      $("#mobilephone").val("+7 ").mask("+7 (000) 000 - 00 - 00");
+    });
+  } catch (error) {
+
+  }
+  // PAGE contact.html end
 });

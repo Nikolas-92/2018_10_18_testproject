@@ -4,9 +4,13 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/guarantee.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
     <script type="text/javascript" src="./js/style.js"></script>
-    <title>Guarantee</title>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui.js"></script>
+    <script type="text/javascript" src="./js/jquery.mask.js"></script>
+    <title>Contact</title>
   </head>
   <body>
     <!-- HEADER start -->
@@ -100,17 +104,17 @@
       <div class="block_a">
         <div class="content">
           <div>
-            <p>Главная</p> <p id="m_smbl"> > </p> <a href="#">Гарантии</a>
+            <p>Главная</p> <p id="m_smbl"> > </p> <a href="#">Контакты</a>
           </div>
           <div>
-            <h2>Гарантии</h2>
+            <h2>Контакты</h2>
           </div>
         </div>
       </div>
       <div class="block_b">
         <div class="content">
-          <img  src="./img/shake.png" alt="">
-          <div class="handshake">
+          <img  src="./img/contactme.png" alt="">
+          <div class="watch_dsc">
             <p>
               Гетерогенная структура, в рамках ограничений классической механики, поглощает бозе-конденсат.
               Ударная волна представляет собой луч, хотя этот факт нуждается в дальнейшей тщательной экспериментальной проверке.
@@ -128,114 +132,41 @@
       </div>
       <div class="block_c">
         <div class="content">
-          <div class="tablehdr">
-            <h3>Адреса сервисных центров производителей</h3>
-          </div>
-          <div class="tablewrapper">
-            <table>
-              <tr>
-                <td>Производитель</td>
-                <td>Город</td>
-                <td>Адрес</td>
-                <td>ст.Метро</td>
-                <td>тел.Горячей линии</td>
-                <td>Режим работы</td>
-              </tr>
-              <tr>
-                <td>Apple</td>
-                <td>Москва</td>
-                <td>пт.Маяковского</td>
-                <td>Маяковская</td>
-                <td>8 (800) 111 11 11</td>
-                <td>пн-пт 9.00 - 17.00</td>
-              </tr>
-              <tr>
-                <td>Apple</td>
-                <td>Москва</td>
-                <td>пт.Маяковского</td>
-                <td>Маяковская</td>
-                <td>8 (800) 111 11 11</td>
-                <td>пн-пт 9.00 - 17.00</td>
-              </tr>
-              <tr>
-                <td>Apple</td>
-                <td>Москва</td>
-                <td>пт.Маяковского</td>
-                <td>Маяковская</td>
-                <td>8 (800) 111 11 11</td>
-                <td>пн-пт 9.00 - 17.00</td>
-              </tr>
-              <tr>
-                <td>Apple</td>
-                <td>Москва</td>
-                <td>пт.Маяковского</td>
-                <td>Маяковская</td>
-                <td>8 (800) 111 11 11</td>
-                <td>пн-пт 9.00 - 17.00</td>
-              </tr>
-              <tr>
-                <td>Apple</td>
-                <td>Москва</td>
-                <td>пт.Маяковского</td>
-                <td>Маяковская</td>
-                <td>8 (800) 111 11 11</td>
-                <td>пн-пт 9.00 - 17.00</td>
-              </tr>
-              <tr>
-                <td>Apple</td>
-                <td>Москва</td>
-                <td>пт.Маяковского</td>
-                <td>Маяковская</td>
-                <td>8 (800) 111 11 11</td>
-                <td>пн-пт 9.00 - 17.00</td>
-              </tr>
-              <tr>
-                <td>Apple</td>
-                <td>Москва</td>
-                <td>пт.Маяковского</td>
-                <td>Маяковская</td>
-                <td>8 (800) 111 11 11</td>
-                <td>пн-пт 9.00 - 17.00</td>
-              </tr>
-              <tr>
-                <td>Apple</td>
-                <td>Москва</td>
-                <td>пт.Маяковского</td>
-                <td>Маяковская</td>
-                <td>8 (800) 111 11 11</td>
-                <td>пн-пт 9.00 - 17.00</td>
-              </tr>
-            </table>
-          </div>
+          <p class="contactushdr">Свяжитесь с нами</p>
+          <form action="contact.html" method="post">
+            <div class="namephonemail">
+              <p>Ваше Имя</p>
+              <input type="text" name="name">
+            </div>
+            <div class="namephonemail">
+              <p>Ваш номер телефона</p>
+              <img src="./img/flag_ru.png" alt="">
+              <input id="mobilephone" type="text" name="mobilephone" value="+7 ( _ _ _ ) _ _ _  _ _  _ _">
+            </div>
+            <div class="namephonemail">
+              <p>E-Mail</p>
+              <input type="text" name="email">
+            </div>
+            <div class="yourquestion">
+              <p>Ваш вопрос</p>
+              <input type="text" name="yourquestion_1">
+              <input type="text" name="yourquestion_2">
+            </div>
+            <button type="submit" name="submitbutton">ОТПРАВИТЬ</button>
+          </form>
         </div>
       </div>
       <div class="block_d">
         <div class="content">
-          <div class="schedule">
-            <p class="ud">Режим работы</p>
-            <img src="./img/clock.png" alt="">
-            <div>
-              <p class="d_t">пн - вс</p>
-              <p class="d_t time">9:00 - 21:00</p>
-              <span class="hint">Без выходных</span>
-            </div>
+          <div class="contactusinfo">
+            <p class="contactushdr">Свяжитесь с нами</p>
+            <p class="contactusinfophonemail"><img src="./img/phone_5.png" alt="">+7 (111) 111 11 11</p>
+            <p class="contactusinfophonemail"><img src="./img/phone_6.png" alt="">8 (800) 111 11 11</p>
+            <p class="contactusinfophonemail"><img src="./img/mail_2.png" alt="">test@ya.ru</p>
+            <p>Наш офис в г. Москва</p>
           </div>
-          <div class="consultation">
-            <p class="ud">Консультации</p>
-            <img src="./img/phone.png" alt="">
-            <div>
-              <p class="d_t">8 (800)</p>
-              <p class="d_t phone">111 11 11</p>
-              <span class="hint">Городской</span>
-            </div>
-          </div>
-          <div class="consultation">
-            <img src="./img/phone_2.png" alt="">
-            <div>
-              <p class="d_t">+7 (111)</p>
-              <p class="d_t phone">111 11 11</p>
-              <span class="hint">Мобильный</span>
-            </div>
+          <div class="contactusmap">
+            <img src="./img/map.png" alt="">
           </div>
         </div>
       </div>
