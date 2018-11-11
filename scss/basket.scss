@@ -1,0 +1,23 @@
+// CONTENT start
+main {
+  .block_a {
+    .content {
+      height: 116px;
+      div {
+        font-size: 14px;
+        padding-top: 30px;
+        p {
+          display: inline;
+        }
+        a {
+          color: #67797a;
+          text-decoration: underline;
+        }
+      }
+      #m_smbl {
+        margin: 0px 5px;
+      }
+    }
+  }
+}
+// CONTENT end

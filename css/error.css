@@ -45,3 +45,17 @@ main {
     cursor: pointer; }
   main button:hover {
     background-color: #ff336d; }
+  main .returnhome {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #f13d70;
+    padding: 14px 32px;
+    margin: 55px auto 0px auto;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 183px;
+    text-align: center; }
+  main .returnhome:hover {
+    background-color: #ff336d; }

@@ -192,21 +192,42 @@ header .block_c {
     header .block_c .content li {
       display: inline-block;
       float: left; }
+    header .block_c .content li:first-child a {
+      padding-left: 0px; }
+    header .block_c .content li:first-child a:hover div {
+      background-position-x: 15px; }
+    header .block_c .content li:first-child div {
+      display: block;
+      float: left;
+      margin: 1px 13px 0px 0px;
+      width: 15px;
+      height: 15px;
+      background-image: url("../img/home_2.png");
+      background-position-x: 0px; }
     header .block_c .content a {
       color: #ffffff;
       font-weight: bold;
       padding: 15px 22px;
       display: inline-block; }
-    header .block_c .content a.no_lpadding {
-      padding-left: 0px; }
     header .block_c .content a:hover {
       background-color: #f13d70; }
-    header .block_c .content #home_icn {
-      display: inline-block;
-      margin-right: 8px; }
     header .block_c .content #down_icn {
       display: inline-block;
       margin: 0px 0px 3px 6px; }
+    header .block_c .content .dropmenu {
+      overflow: hidden;
+      position: absolute;
+      min-width: 200px;
+      background-color: #4bc1c1;
+      display: none; }
+      header .block_c .content .dropmenu a {
+        display: block;
+        background-color: #green;
+        color: #ffffff;
+        font-size: 14px;
+        padding: 10px 20px; }
+      header .block_c .content .dropmenu a:hover {
+        background-color: #f13d70; }
 
 footer .block_a {
   background-color: #3f4849; }

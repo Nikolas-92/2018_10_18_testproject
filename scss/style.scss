@@ -242,25 +242,52 @@ header {
         display: inline-block;
         float: left;
       }
+      li:first-child {
+        a {
+          padding-left: 0px;
+        }
+        a:hover div {
+          background-position-x: 15px;
+        }
+        div {
+          display: block;
+          float: left;
+          margin: 1px 13px 0px 0px;
+          width: 15px;
+          height: 15px;
+          background-image: url("../img/home_2.png");
+          background-position-x: 0px;
+        }
+      }
       a {
         color: #ffffff;
         font-weight: bold;
         padding: 15px 22px;
         display: inline-block;
       }
-      a.no_lpadding {
-        padding-left: 0px;
-      }
       a:hover {
         background-color: #f13d70;
-      }
-      #home_icn {
-        display: inline-block;
-        margin-right: 8px;
       }
       #down_icn {
         display: inline-block;
         margin: 0px 0px 3px 6px;
+      }
+      .dropmenu {
+        overflow: hidden;
+        position: absolute;
+        min-width: 200px;
+        background-color: #4bc1c1;
+        display: none;
+        a {
+          display: block;
+          background-color: #green;
+          color: #ffffff;
+          font-size: 14px;
+          padding: 10px 20px;
+        }
+        a:hover {
+          background-color: #f13d70;
+        }
       }
     }
   }
