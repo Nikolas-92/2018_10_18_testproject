@@ -1,12 +1,115 @@
-main .block_a .content {
-  height: 116px; }
-  main .block_a .content div {
-    font-size: 14px;
-    padding-top: 30px; }
-    main .block_a .content div p {
-      display: inline; }
-    main .block_a .content div a {
-      color: #67797a;
-      text-decoration: underline; }
-  main .block_a .content #m_smbl {
-    margin: 0px 5px; }
+main .block_a .content div {
+  font-size: 14px;
+  padding: 30px 0px 25px 0px; }
+  main .block_a .content div p {
+    display: inline; }
+  main .block_a .content div a {
+    color: #67797a;
+    text-decoration: underline; }
+
+main .block_a .content #m_smbl {
+  margin: 0px 5px; }
+
+main .block_b .content {
+  overflow: hidden; }
+  main .block_b .content .basketwrapper {
+    overflow: hidden;
+    float: left;
+    width: 880px; }
+    main .block_b .content .basketwrapper .pathexplore {
+      overflow: hidden;
+      font-size: 24px; }
+      main .block_b .content .basketwrapper .pathexplore a {
+        color: #b8bfc0; }
+      main .block_b .content .basketwrapper .pathexplore img {
+        margin: 0px 12px; }
+      main .block_b .content .basketwrapper .pathexplore .pathhover {
+        color: #4bc1c1; }
+    main .block_b .content .basketwrapper .basketctt {
+      overflow: hidden; }
+      main .block_b .content .basketwrapper .basketctt .columnwrapper {
+        padding: 40px 0px 12px 0px; }
+        main .block_b .content .basketwrapper .basketctt .columnwrapper p {
+          display: inline;
+          font-size: 14px;
+          color: #b8bfc0; }
+        main .block_b .content .basketwrapper .basketctt .columnwrapper .columnname {
+          margin-left: 136px; }
+        main .block_b .content .basketwrapper .basketctt .columnwrapper .columnamount {
+          margin-left: 266px; }
+        main .block_b .content .basketwrapper .basketctt .columnwrapper .columnprice {
+          margin-left: 204px; }
+      main .block_b .content .basketwrapper .basketctt .basketitem {
+        overflow: hidden;
+        margin: 0px 0px 25px 0px; }
+        main .block_b .content .basketwrapper .basketctt .basketitem span {
+          display: block;
+          float: left;
+          font-size: 15px;
+          color: #f13d70;
+          cursor: pointer;
+          margin: 24px 38px 0px 0px; }
+        main .block_b .content .basketwrapper .basketctt .basketitem img {
+          display: block;
+          float: left;
+          width: 50px; }
+        main .block_b .content .basketwrapper .basketctt .basketitem .itemnameoptions {
+          overflow: hidden;
+          float: left;
+          margin: 22px 0px 0px 38px; }
+          main .block_b .content .basketwrapper .basketctt .basketitem .itemnameoptions p {
+            font-size: 18px;
+            font-weight: bold; }
+          main .block_b .content .basketwrapper .basketctt .basketitem .itemnameoptions a {
+            display: block;
+            float: left; }
+          main .block_b .content .basketwrapper .basketctt .basketitem .itemnameoptions span {
+            font-size: 12px;
+            color: #4bc1c1;
+            text-decoration: underline;
+            margin: 0px; }
+          main .block_b .content .basketwrapper .basketctt .basketitem .itemnameoptions img {
+            width: 11px;
+            margin: 2.5px 0px 0px 5px; }
+        main .block_b .content .basketwrapper .basketctt .basketitem .incdecamount {
+          overflow: hidden;
+          float: left;
+          margin: 20px 0px 0px 140px; }
+          main .block_b .content .basketwrapper .basketctt .basketitem .incdecamount span {
+            display: block;
+            float: left;
+            color: #f13d70;
+            font-size: 18px;
+            margin: 3px 0px 0px 0px; }
+          main .block_b .content .basketwrapper .basketctt .basketitem .incdecamount span:last-child {
+            margin: 4px 0px 0px 0px; }
+          main .block_b .content .basketwrapper .basketctt .basketitem .incdecamount p {
+            float: left;
+            font-size: 24px;
+            padding: 0px 14px; }
+        main .block_b .content .basketwrapper .basketctt .basketitem .pricebig {
+          float: right;
+          font-size: 24px;
+          font-weight: bold;
+          color: #4bc1c1;
+          margin: 20px 0px 0px 0px; }
+          main .block_b .content .basketwrapper .basketctt .basketitem .pricebig sup {
+            font-size: 14px; }
+      main .block_b .content .basketwrapper .basketctt .basketitem:last-child {
+        margin: 0px 0px 0px 0px; }
+    main .block_b .content .basketwrapper .browsemore {
+      overflow: hidden;
+      padding: 60px 0px 26px 0px;
+      border-bottom: 1px solid #e8e8e8; }
+      main .block_b .content .basketwrapper .browsemore a {
+        display: block;
+        float: left; }
+      main .block_b .content .basketwrapper .browsemore img {
+        display: block;
+        float: left;
+        margin: 4px 12px 0px 0px; }
+      main .block_b .content .basketwrapper .browsemore span {
+        display: block;
+        float: left;
+        font-family: Myriad Pro, sans-serif;
+        font-size: 14px; }

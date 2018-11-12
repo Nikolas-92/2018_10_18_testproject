@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // drop menu
   document.querySelector(".dropmenu").onmouseleave = () => { $(".dropmenu").toggle("blind", 200); }
-  document.querySelector(".dropmenu").parentElement.firstElementChild.onmouseenter = () => {
+  document.querySelector(".dropmenu").parentElement.firstElementChild.onclick = () => {
     $(".dropmenu").toggle("blind", 200);
   }
 
