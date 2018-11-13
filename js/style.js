@@ -72,4 +72,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }
   // PAGE contact.html end
+
+
+
+
+  // PAGE basket.html start
+  try {
+    var dom_incwrap = document.querySelectorAll(".incdecamount");
+
+    for (var i = 0; i < dom_incwrap.length; i++) {
+      // for every wrapper in dom_incwrap
+      let dom_spanM = dom_incwrap[i].children[0]; // span element minus
+      let dom_p = dom_incwrap[i].children[1]; // p element with number
+      let dom_spanP = dom_incwrap[i].children[2]; // span element plus
+
+      // minus span action
+      dom_spanM.onclick = () => {
+        // check for zero
+        if (parseInt(dom_p.innerHTML) >= 2) {
+          dom_p.innerHTML = parseInt(dom_p.innerHTML) - 1;
+        }
+      }
+
+      // plus span action
+      dom_spanP.onclick = () => {
+        dom_p.innerHTML = parseInt(dom_p.innerHTML) + 1;
+      }
+    }
+  } catch (error) {
+
+  }
+  // PAGE basket.html end
 });

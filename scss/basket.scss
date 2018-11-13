@@ -24,12 +24,13 @@ main {
       .basketwrapper {
         overflow: hidden;
         float: left;
-        width: 880px;
+        width: 890px;
         .pathexplore {
           overflow: hidden;
           font-size: 24px;
-          a {
+          p {
             color: #b8bfc0;
+            display: inline;
           }
           img {
             margin: 0px 12px;
@@ -51,7 +52,7 @@ main {
               margin-left: 136px;
             }
             .columnamount {
-              margin-left: 266px;
+              margin-left: 276px;
             }
             .columnprice {
               margin-left: 204px;
@@ -59,7 +60,7 @@ main {
           }
           .basketitem {
             overflow: hidden;
-            margin: 0px 0px 25px 0px;
+            margin: 0px 0px 32px 0px;
             span {
               display: block;
               float: left;
@@ -99,7 +100,7 @@ main {
             .incdecamount {
               overflow: hidden;
               float: left;
-              margin: 20px 0px 0px 140px;
+              margin: 20px 0px 0px 150px;
               span {
                 display: block;
                 float: left;
@@ -133,7 +134,7 @@ main {
         }
         .browsemore {
           overflow: hidden;
-          padding: 60px 0px 26px 0px;
+          padding: 68px 0px 26px 0px;
           border-bottom: 1px solid #e8e8e8;
           a {
             display: block;
@@ -149,6 +150,178 @@ main {
             float: left;
             font-family: Myriad Pro, sans-serif;
             font-size: 14px;
+          }
+        }
+        .athorizregistrwrapper {
+          overflow: hidden;
+          div {
+            overflow: hidden;
+            float: left;
+            padding: 15px 0px 0px 0px;
+            width: 260px;
+            margin: 0px 0px 0px 50px;
+          }
+          div:first-child {
+            margin: 0px 0px 0px 0px;
+          }
+          img {
+            display: block;
+            float: left;
+          }
+          p {
+            float: left;
+            font-size: 12px;
+            width: 212px;
+            margin: 15px 0px 0px 20px;
+            text-align: left;
+          }
+          a {
+            display: block;
+            float: left;
+            font-size: 18px;
+            clear: right;
+            border-bottom: 2px solid #dbf0f0;
+            margin: 0px 0px 0px 20px;
+          }
+          a:hover {
+            color: #f13d70;
+            border-bottom: 2px solid #ffffff;
+          }
+          span {
+            color: #f13d70;
+          }
+          .authoriz {
+            a {
+              line-height: 18px;
+            }
+          }
+          .registr {
+            a {
+              line-height: 18px;
+            }
+          }
+          .conditions {
+            width: 270px;
+            a {
+              display: inline;
+              float: none;
+              font-size: 12px;
+              border: none;
+              margin: 0px 0px 0px 0px;
+              text-decoration: underline;
+            }
+            p {
+              margin: 35px 0px 0px 0px;
+              width: 100%;
+            }
+          }
+        }
+      }
+      .totalbillwrapper {
+        overflow: hidden;
+        float: left;
+        width: 260px;
+        margin: 29px 0px 0px 20px;
+        .tbnumberswrapper {
+          overflow: hidden;
+          background-color: #fbfbfb;
+          padding: 18px 28px 18px 28px;
+          span {
+            font-size: 14px;
+            display: block;
+            float: right;
+            margin: 8px 0px 0px 5px;
+          }
+          div {
+            overflow: hidden;
+          }
+          div p:first-child {
+            font-size: 14px;
+            float: left;
+            margin: 9px 0px 0px 0px;
+          }
+          div p {
+            font-size: 24px;
+            display: block;
+            float: right;
+          }
+          .billhdr {
+            font-size: 24px;
+            margin: 0px 0px 12px 0px;
+          }
+          .billprice {
+            p:first-child {
+              color: #b8bfc0;
+            }
+          }
+          .billdiscount {
+            p:first-child {
+              color: #b8bfc0;
+            }
+          }
+          .billorder {
+            padding: 10px 0px 15px 0px;
+            margin: 12px 0px 8px 0px;
+            border-top: 1px solid #e8e8e8;
+            border-bottom: 1px solid #e8e8e8;
+            p {
+              color: #4bc1c1;
+            }
+            p:first-child {
+              color: #67797a;
+            }
+          }
+          .billdelivery {
+            p:first-child {
+              color: #4bc1c1;
+            }
+          }
+        }
+        button {
+          display: block;
+          margin: 30px auto;
+          border: none;
+          background-color: #f13d70;
+          width: 220px;
+          height: 44px;
+          text-align: center;
+          font-size: 14px;
+          font-weight: bold;
+          color: #ffffff;
+          border-radius: 25px;
+          cursor: pointer;
+        }
+        button:hover {
+          background-color: #ff336d;
+        }
+        .promocodewrapper {
+          overflow: hidden;
+          background-color: #fbfbfb;
+          padding: 12px 28px;
+          a {
+            text-decoration: underline;
+            font-size: 14px;
+          }
+          a:hover {
+            color: #f13d70;
+          }
+          .promocode {
+            overflow: hidden;
+            border-bottom: 1px solid #e8e8e8;
+            padding: 0px 0px 26px 0px;
+            margin: 0px 0px 10px 0px;
+            img {
+              display: block;
+              float: left;
+              margin: 0px 8px 0px 0px;
+            }
+            p {
+              float: left;
+              font-size: 12px;
+            }
+          }
+          .recalc {
+            text-align: center;
           }
         }
       }

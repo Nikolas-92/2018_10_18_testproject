@@ -15,12 +15,13 @@ main .block_b .content {
   main .block_b .content .basketwrapper {
     overflow: hidden;
     float: left;
-    width: 880px; }
+    width: 890px; }
     main .block_b .content .basketwrapper .pathexplore {
       overflow: hidden;
       font-size: 24px; }
-      main .block_b .content .basketwrapper .pathexplore a {
-        color: #b8bfc0; }
+      main .block_b .content .basketwrapper .pathexplore p {
+        color: #b8bfc0;
+        display: inline; }
       main .block_b .content .basketwrapper .pathexplore img {
         margin: 0px 12px; }
       main .block_b .content .basketwrapper .pathexplore .pathhover {
@@ -36,12 +37,12 @@ main .block_b .content {
         main .block_b .content .basketwrapper .basketctt .columnwrapper .columnname {
           margin-left: 136px; }
         main .block_b .content .basketwrapper .basketctt .columnwrapper .columnamount {
-          margin-left: 266px; }
+          margin-left: 276px; }
         main .block_b .content .basketwrapper .basketctt .columnwrapper .columnprice {
           margin-left: 204px; }
       main .block_b .content .basketwrapper .basketctt .basketitem {
         overflow: hidden;
-        margin: 0px 0px 25px 0px; }
+        margin: 0px 0px 32px 0px; }
         main .block_b .content .basketwrapper .basketctt .basketitem span {
           display: block;
           float: left;
@@ -74,7 +75,7 @@ main .block_b .content {
         main .block_b .content .basketwrapper .basketctt .basketitem .incdecamount {
           overflow: hidden;
           float: left;
-          margin: 20px 0px 0px 140px; }
+          margin: 20px 0px 0px 150px; }
           main .block_b .content .basketwrapper .basketctt .basketitem .incdecamount span {
             display: block;
             float: left;
@@ -99,7 +100,7 @@ main .block_b .content {
         margin: 0px 0px 0px 0px; }
     main .block_b .content .basketwrapper .browsemore {
       overflow: hidden;
-      padding: 60px 0px 26px 0px;
+      padding: 68px 0px 26px 0px;
       border-bottom: 1px solid #e8e8e8; }
       main .block_b .content .basketwrapper .browsemore a {
         display: block;
@@ -113,3 +114,130 @@ main .block_b .content {
         float: left;
         font-family: Myriad Pro, sans-serif;
         font-size: 14px; }
+    main .block_b .content .basketwrapper .athorizregistrwrapper {
+      overflow: hidden; }
+      main .block_b .content .basketwrapper .athorizregistrwrapper div {
+        overflow: hidden;
+        float: left;
+        padding: 15px 0px 0px 0px;
+        width: 260px;
+        margin: 0px 0px 0px 50px; }
+      main .block_b .content .basketwrapper .athorizregistrwrapper div:first-child {
+        margin: 0px 0px 0px 0px; }
+      main .block_b .content .basketwrapper .athorizregistrwrapper img {
+        display: block;
+        float: left; }
+      main .block_b .content .basketwrapper .athorizregistrwrapper p {
+        float: left;
+        font-size: 12px;
+        width: 212px;
+        margin: 15px 0px 0px 20px;
+        text-align: left; }
+      main .block_b .content .basketwrapper .athorizregistrwrapper a {
+        display: block;
+        float: left;
+        font-size: 18px;
+        clear: right;
+        border-bottom: 2px solid #dbf0f0;
+        margin: 0px 0px 0px 20px; }
+      main .block_b .content .basketwrapper .athorizregistrwrapper a:hover {
+        color: #f13d70;
+        border-bottom: 2px solid #ffffff; }
+      main .block_b .content .basketwrapper .athorizregistrwrapper span {
+        color: #f13d70; }
+      main .block_b .content .basketwrapper .athorizregistrwrapper .authoriz a {
+        line-height: 18px; }
+      main .block_b .content .basketwrapper .athorizregistrwrapper .registr a {
+        line-height: 18px; }
+      main .block_b .content .basketwrapper .athorizregistrwrapper .conditions {
+        width: 270px; }
+        main .block_b .content .basketwrapper .athorizregistrwrapper .conditions a {
+          display: inline;
+          float: none;
+          font-size: 12px;
+          border: none;
+          margin: 0px 0px 0px 0px;
+          text-decoration: underline; }
+        main .block_b .content .basketwrapper .athorizregistrwrapper .conditions p {
+          margin: 35px 0px 0px 0px;
+          width: 100%; }
+  main .block_b .content .totalbillwrapper {
+    overflow: hidden;
+    float: left;
+    width: 260px;
+    margin: 29px 0px 0px 20px; }
+    main .block_b .content .totalbillwrapper .tbnumberswrapper {
+      overflow: hidden;
+      background-color: #fbfbfb;
+      padding: 18px 28px 18px 28px; }
+      main .block_b .content .totalbillwrapper .tbnumberswrapper span {
+        font-size: 14px;
+        display: block;
+        float: right;
+        margin: 8px 0px 0px 5px; }
+      main .block_b .content .totalbillwrapper .tbnumberswrapper div {
+        overflow: hidden; }
+      main .block_b .content .totalbillwrapper .tbnumberswrapper div p:first-child {
+        font-size: 14px;
+        float: left;
+        margin: 9px 0px 0px 0px; }
+      main .block_b .content .totalbillwrapper .tbnumberswrapper div p {
+        font-size: 24px;
+        display: block;
+        float: right; }
+      main .block_b .content .totalbillwrapper .tbnumberswrapper .billhdr {
+        font-size: 24px;
+        margin: 0px 0px 12px 0px; }
+      main .block_b .content .totalbillwrapper .tbnumberswrapper .billprice p:first-child {
+        color: #b8bfc0; }
+      main .block_b .content .totalbillwrapper .tbnumberswrapper .billdiscount p:first-child {
+        color: #b8bfc0; }
+      main .block_b .content .totalbillwrapper .tbnumberswrapper .billorder {
+        padding: 10px 0px 15px 0px;
+        margin: 12px 0px 8px 0px;
+        border-top: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8; }
+        main .block_b .content .totalbillwrapper .tbnumberswrapper .billorder p {
+          color: #4bc1c1; }
+        main .block_b .content .totalbillwrapper .tbnumberswrapper .billorder p:first-child {
+          color: #67797a; }
+      main .block_b .content .totalbillwrapper .tbnumberswrapper .billdelivery p:first-child {
+        color: #4bc1c1; }
+    main .block_b .content .totalbillwrapper button {
+      display: block;
+      margin: 30px auto;
+      border: none;
+      background-color: #f13d70;
+      width: 220px;
+      height: 44px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      color: #ffffff;
+      border-radius: 25px;
+      cursor: pointer; }
+    main .block_b .content .totalbillwrapper button:hover {
+      background-color: #ff336d; }
+    main .block_b .content .totalbillwrapper .promocodewrapper {
+      overflow: hidden;
+      background-color: #fbfbfb;
+      padding: 12px 28px; }
+      main .block_b .content .totalbillwrapper .promocodewrapper a {
+        text-decoration: underline;
+        font-size: 14px; }
+      main .block_b .content .totalbillwrapper .promocodewrapper a:hover {
+        color: #f13d70; }
+      main .block_b .content .totalbillwrapper .promocodewrapper .promocode {
+        overflow: hidden;
+        border-bottom: 1px solid #e8e8e8;
+        padding: 0px 0px 26px 0px;
+        margin: 0px 0px 10px 0px; }
+        main .block_b .content .totalbillwrapper .promocodewrapper .promocode img {
+          display: block;
+          float: left;
+          margin: 0px 8px 0px 0px; }
+        main .block_b .content .totalbillwrapper .promocodewrapper .promocode p {
+          float: left;
+          font-size: 12px; }
+      main .block_b .content .totalbillwrapper .promocodewrapper .recalc {
+        text-align: center; }
