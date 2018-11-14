@@ -99,6 +99,12 @@ document.addEventListener("DOMContentLoaded", () => {
         dom_p.innerHTML = parseInt(dom_p.innerHTML) + 1;
       }
     }
+
+
+    // phone mask
+    $("#mobilephone").on("focus", () => {
+      $("#mobilephone").val("+7 ").mask("+7 (000) 000 - 00 - 00");
+    });
   } catch (error) {
 
   }

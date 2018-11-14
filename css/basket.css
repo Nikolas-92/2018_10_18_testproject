@@ -27,7 +27,9 @@ main .block_b .content {
       main .block_b .content .basketwrapper .pathexplore .pathhover {
         color: #4bc1c1; }
     main .block_b .content .basketwrapper .basketctt {
-      overflow: hidden; }
+      overflow: hidden;
+      min-width: 100%;
+      min-height: 233px; }
       main .block_b .content .basketwrapper .basketctt .columnwrapper {
         padding: 40px 0px 12px 0px; }
         main .block_b .content .basketwrapper .basketctt .columnwrapper p {
@@ -241,3 +243,116 @@ main .block_b .content {
           font-size: 12px; }
       main .block_b .content .totalbillwrapper .promocodewrapper .recalc {
         text-align: center; }
+
+main .block_c .content {
+  overflow: hidden; }
+  main .block_c .content .yourplacewrapper {
+    overflow: hidden;
+    margin: 50px 0px 0px 0px; }
+    main .block_c .content .yourplacewrapper .yourplaceauto {
+      overflow: hidden;
+      font-size: 18px; }
+      main .block_c .content .yourplacewrapper .yourplaceauto p {
+        float: left; }
+      main .block_c .content .yourplacewrapper .yourplaceauto a {
+        display: block;
+        float: left;
+        border-bottom: 2px solid #dbf0f0;
+        line-height: 18px;
+        margin: 0px 0px 0px 5px; }
+      main .block_c .content .yourplacewrapper .yourplaceauto a:hover {
+        color: #f13d70;
+        border-bottom: 2px solid #ffffff; }
+    main .block_c .content .yourplacewrapper .yourplacechoose {
+      overflow: hidden;
+      margin: 22px 0px 0px 0px; }
+      main .block_c .content .yourplacewrapper .yourplacechoose p {
+        font-size: 14px;
+        display: block;
+        float: left; }
+      main .block_c .content .yourplacewrapper .yourplacechoose input {
+        font-size: 12px;
+        display: block;
+        float: left;
+        width: 185px;
+        border: none;
+        border-bottom: 1px solid #e8e8e8;
+        padding: 2px 0px 12px 0px;
+        margin: 0px 30px 0px 20px; }
+      main .block_c .content .yourplacewrapper .yourplacechoose button {
+        display: block;
+        float: left;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: Roboto, sans-serif;
+        width: 100px;
+        height: 30px;
+        background-color: #f13d70;
+        border: none;
+        border-radius: 25px;
+        color: #ffffff;
+        text-align: center;
+        cursor: pointer; }
+      main .block_c .content .yourplacewrapper .yourplacechoose button:hover {
+        background-color: #ff336d; }
+  main .block_c .content .contactinfo {
+    overflow: hidden;
+    margin: 40px 0px 0px 0px; }
+    main .block_c .content .contactinfo .contactushdr {
+      font-size: 18px;
+      margin: 0px 0px 20px 0px; }
+    main .block_c .content .contactinfo form {
+      overflow: hidden; }
+    main .block_c .content .contactinfo .namephonemail {
+      overflow: hidden;
+      float: left;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #e8e8e8;
+      margin: 0px 0px 0px 30px; }
+      main .block_c .content .contactinfo .namephonemail input {
+        border: none;
+        width: 306px;
+        font-size: 14px; }
+      main .block_c .content .contactinfo .namephonemail img {
+        display: block;
+        float: left;
+        margin: 3px 10px 0px 0px; }
+      main .block_c .content .contactinfo .namephonemail p {
+        margin-bottom: 10px;
+        font-family: Myriad Pro, sans-serif;
+        font-size: 14px; }
+    main .block_c .content .contactinfo .namephonemail:first-child {
+      margin: 0px 0px 0px 0px; }
+    main .block_c .content .contactinfo button {
+      font-size: 12px;
+      font-weight: bold;
+      float: right;
+      width: 100px;
+      height: 30px;
+      background-color: #f13d70;
+      color: #ffffff;
+      border: none;
+      border-radius: 25px;
+      text-align: center;
+      cursor: pointer;
+      margin: 14px 0px 0px 0px; }
+    main .block_c .content .contactinfo button:hover {
+      background-color: #ff336d; }
+
+main .block_d .content {
+  overflow: hidden;
+  padding: 50px 0px 0px 0px; }
+  main .block_d .content .hdrpa {
+    font-size: 18px;
+    margin: 0px 0px 26px 0px; }
+  main .block_d .content .dandpwrapper {
+    overflow: hidden;
+    float: left;
+    width: 346px; }
+  main .block_d .content .addresswrapper {
+    overflow: hidden;
+    float: right;
+    width: 780px; }
+    main .block_d .content .addresswrapper img {
+      display: block;
+      width: 780px; }

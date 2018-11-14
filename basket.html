@@ -9,6 +9,7 @@
     <script type="text/javascript" src="./js/style.js"></script>
     <script type="text/javascript" src="./js/jquery.js"></script>
     <script type="text/javascript" src="./js/jquery-ui.js"></script>
+    <script type="text/javascript" src="./js/jquery.mask.js"></script>
     <title>Basket</title>
   </head>
   <body>
@@ -209,6 +210,51 @@
                 <a href="#">Пересчитать</a>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="block_c">
+        <div class="content">
+          <div class="yourplacewrapper">
+            <div class="yourplaceauto">
+              <p>Ваш город доставки определен автоматически: </p>
+              <a href="#">Москва</a>
+            </div>
+            <div class="yourplacechoose">
+              <p>Если город определен неверно, пожалуйста введите свой город</p>
+              <input type="text" name="city" value="" placeholder="Санкт-Петербург">
+              <button type="button" name="savecity">СОХРАНИТЬ</button>
+            </div>
+          </div>
+          <div class="contactinfo">
+            <p class="contactushdr">Контактная информация</p>
+            <form action="contact.html" method="post">
+              <div class="namephonemail">
+                <p>Имя</p>
+                <input type="text" name="name">
+              </div>
+              <div class="namephonemail">
+                <p>Ваш номер телефона</p>
+                <img src="./img/flag_ru.png" alt="">
+                <input id="mobilephone" type="text" name="mobilephone" placeholder="+7 ( _ _ _ ) _ _ _  _ _  _ _">
+              </div>
+              <div class="namephonemail">
+                <p>E-Mail</p>
+                <input type="text" name="email">
+              </div>
+              <button type="submit" name="submitbutton">СОХРАНИТЬ</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="block_d">
+        <div class="content">
+          <div class="dandpwrapper">
+            <p class="hdrpa">Доставка и оплата товара</p>
+          </div>
+          <div class="addresswrapper">
+            <p class="hdrpa">Посмотреть адреса отделений на карте</p>
+            <img src="./img/map.png" alt="">
           </div>
         </div>
       </div>

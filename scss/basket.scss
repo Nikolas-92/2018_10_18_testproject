@@ -41,6 +41,8 @@ main {
         }
         .basketctt {
           overflow: hidden;
+          min-width: 100%;
+          min-height: 233px;
           .columnwrapper {
             padding: 40px 0px 12px 0px;
             p {
@@ -323,6 +325,147 @@ main {
           .recalc {
             text-align: center;
           }
+        }
+      }
+    }
+  }
+  .block_c {
+    .content {
+      overflow: hidden;
+      .yourplacewrapper {
+        overflow: hidden;
+        margin: 50px 0px 0px 0px;
+        .yourplaceauto {
+          overflow: hidden;
+          font-size: 18px;
+          p {
+            float: left;
+          }
+          a {
+            display: block;
+            float: left;
+            border-bottom: 2px solid #dbf0f0;
+            line-height: 18px;
+            margin: 0px 0px 0px 5px;
+          }
+          a:hover {
+            color: #f13d70;
+            border-bottom: 2px solid #ffffff;
+          }
+        }
+        .yourplacechoose {
+          overflow: hidden;
+          margin: 22px 0px 0px 0px;
+          p {
+            font-size: 14px;
+            display: block;
+            float: left;
+          }
+          input {
+            font-size: 12px;
+            display: block;
+            float: left;
+            width: 185px;
+            border: none;
+            border-bottom: 1px solid #e8e8e8;
+            padding: 2px 0px 12px 0px;
+            margin: 0px 30px 0px 20px;
+          }
+          button {
+            display: block;
+            float: left;
+            font-size: 12px;
+            font-weight: bold;
+            font-family: Roboto, sans-serif;
+            width: 100px;
+            height: 30px;
+            background-color: #f13d70;
+            border: none;
+            border-radius: 25px;
+            color: #ffffff;
+            text-align: center;
+            cursor: pointer;
+          }
+          button:hover {
+            background-color: #ff336d;
+          }
+        }
+      }
+      .contactinfo {
+        overflow: hidden;
+        margin: 40px 0px 0px 0px;
+        .contactushdr {
+          font-size: 18px;
+          margin: 0px 0px 20px 0px;
+        }
+        form {
+          overflow: hidden;
+        }
+        .namephonemail {
+          overflow: hidden;
+          float: left;
+          padding-bottom: 5px;
+          border-bottom: 1px solid #e8e8e8;
+          margin: 0px 0px 0px 30px;
+          input {
+            border: none;
+            width: 306px;;
+            font-size: 14px;
+          }
+          img {
+            display: block;
+            float: left;
+            margin: 3px 10px 0px 0px;
+          }
+          p {
+            margin-bottom: 10px;
+            font-family: Myriad Pro, sans-serif;
+            font-size: 14px;
+          }
+        }
+        .namephonemail:first-child {
+          margin: 0px 0px 0px 0px;
+        }
+        button {
+          font-size: 12px;
+          font-weight: bold;
+          float: right;
+          width: 100px;
+          height: 30px;
+          background-color: #f13d70;
+          color: #ffffff;
+          border: none;
+          border-radius: 25px;
+          text-align: center;
+          cursor: pointer;
+          margin: 14px 0px 0px 0px;
+        }
+        button:hover {
+          background-color: #ff336d;
+        }
+      }
+    }
+  }
+  .block_d {
+    .content {
+      overflow: hidden;
+      padding: 50px 0px 0px 0px;
+      .hdrpa {
+        font-size: 18px;
+        margin: 0px 0px 26px 0px;
+      }
+      .dandpwrapper {
+        overflow: hidden;
+        float: left;
+        width: 346px;
+      }
+      .addresswrapper {
+        overflow: hidden;
+        float: right;
+        width: 780px;
+        img {
+          display: block;
+          width: 780px;
         }
       }
     }
