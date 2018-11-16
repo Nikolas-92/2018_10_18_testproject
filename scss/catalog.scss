@@ -44,6 +44,7 @@ main {
         width: 1090px;
         .slidedscrpreviewrapper {
           overflow: hidden;
+          display: none;
           .slidedscr {
             overflow: hidden;
             float: left;
@@ -135,6 +136,9 @@ main {
               float: left;
             }
           }
+        }
+        .slidedscrpreviewrapper:first-child {
+          display: block;
         }
         .slidefastnav {
           overflow: hidden;

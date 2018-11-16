@@ -33,10 +33,78 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // PAGE catalog.html start
   try {
-    // all fast switch buttons
     var domFastButton = document.querySelectorAll(".slidefastbutton");
+    var domSlideScreen = document.querySelectorAll(".slidedscrpreviewrapper");
+    var domClDispl = domSlideScreen[0];
+    var domSlideLeft = document.querySelector("#lsb");
+    var domSlideRight = document.querySelector("#rsb");
 
-    
+    // Fast nav buttons
+    for (var i = 0; i < domFastButton.length; i++) {
+      let domFBElement = domFastButton[i];
+      let domSSElement = domSlideScreen[i];
+
+      domFBElement.onclick = () => {
+        // disable all slides
+        for (var z = 0; z < domSlideScreen.length; z++) {
+          domSlideScreen[z].style.display = "none";
+        }
+
+        domSSElement.style.display = "block";
+        domClDispl = domSSElement;
+      }
+    }
+
+    // Slide left, right
+    domSlideLeft.onclick = () => {
+      let lastSymbolInId = parseInt(domClDispl.id.slice(-1));
+
+      domClDispl.style.display = "none";
+
+      // if first slide, go to last
+      if (lastSymbolInId <= 1) {
+        domClDispl = domSlideScreen[domSlideScreen.length - 1];
+        domClDispl.style.display = "block";
+        if (jQuery) {
+          domClDispl.style.opacity = 0;
+          $(domClDispl).animate({opacity: 1}, 800);
+        }
+
+        return;
+      }
+
+      domClDispl = domSlideScreen[lastSymbolInId - 2];
+      domClDispl.style.display = "block";
+      if (jQuery) {
+        domClDispl.style.opacity = 0;
+        $(domClDispl).animate({opacity: 1}, 800);
+      }
+    }
+    domSlideRight.onclick = () => {
+      let lastSymbolInId = parseInt(domClDispl.id.slice(-1));
+
+      domClDispl.style.display = "none";
+
+      // if last slide, go to first
+      if (lastSymbolInId >= 3) {
+        domClDispl = domSlideScreen[0];
+        domClDispl.style.display = "block";
+        if (jQuery) {
+          domClDispl.style.opacity = 0;
+          $(domClDispl).animate({opacity: 1}, 800);
+        }
+
+        return;
+      }
+
+      domClDispl = domSlideScreen[lastSymbolInId];
+      domClDispl.style.display = "block";
+      if (jQuery) {
+        domClDispl.style.opacity = 0;
+        $(domClDispl).animate({opacity: 1}, 800);
+      }
+    }
+
   } catch (error) {
 
   }

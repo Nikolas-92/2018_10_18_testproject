@@ -34,7 +34,8 @@ main .block_a {
       float: left;
       width: 1090px; }
       main .block_a .content .slide .slidedscrpreviewrapper {
-        overflow: hidden; }
+        overflow: hidden;
+        display: none; }
         main .block_a .content .slide .slidedscrpreviewrapper .slidedscr {
           overflow: hidden;
           float: left;
@@ -107,6 +108,8 @@ main .block_a {
           main .block_a .content .slide .slidedscrpreviewrapper .slidepreview img {
             display: block;
             float: left; }
+      main .block_a .content .slide .slidedscrpreviewrapper:first-child {
+        display: block; }
       main .block_a .content .slide .slidefastnav {
         overflow: hidden;
         clear: both;
