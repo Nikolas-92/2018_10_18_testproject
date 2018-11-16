@@ -251,6 +251,42 @@
         <div class="content">
           <div class="dandpwrapper">
             <p class="hdrpa">Доставка и оплата товара</p>
+            <div class="city">
+              <p>Город <span>*</span></p>
+              <a href="#">Изменить</a>
+              <input type="text" name="city" placeholder="Санкт-Петербург">
+              <p class="hint">(для выбора доставки и оплаты)</p>
+            </div>
+            <div class="labelandselectorwrapper">
+              <div class="selectorlabel">
+                <p>Способ оплаты</p>
+                <p>Способ доставки</p>
+                <p>Перевозчик</p>
+                <p>Адрес Постамата</p>
+              </div>
+              <div class="selectorwrapper">
+                <select name="paymethod">
+                  <option value="card">Картой при получении</option>
+                  <option value="card2">Картой при получении2</option>
+                </select>
+                <select name="delivermethod">
+                  <option value="mail">Постамати</option>
+                  <option value="mail2">Постамати2</option>
+                </select>
+                <select name="transferagent">
+                  <option value="rusmail">EMS Почта России</option>
+                  <option value="rusmail">EMS Почта России2</option>
+                </select>
+                <select name="addresstransagent">
+                  <option value="m">пер. Маяковского, отдл. №19</option>
+                  <option value="m2">пер. Маяковского, отдл. №192</option>
+                </select>
+              </div>
+            </div>
+            <div class="ordernote">
+              <p>Примечания к заказу</p>
+              <input type="text" name="note">
+            </div>
           </div>
           <div class="addresswrapper">
             <p class="hdrpa">Посмотреть адреса отделений на карте</p>

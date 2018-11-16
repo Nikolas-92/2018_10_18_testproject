@@ -31,6 +31,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+  // PAGE catalog.html start
+  try {
+    // all fast switch buttons
+    var domFastButton = document.querySelectorAll(".slidefastbutton");
+
+    
+  } catch (error) {
+
+  }
+  // PAGE catalog.html end
+
+
+
+
   // PAGE compare.html start
   try {
     // price range slider

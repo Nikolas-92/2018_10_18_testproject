@@ -449,7 +449,7 @@ main {
   .block_d {
     .content {
       overflow: hidden;
-      padding: 50px 0px 0px 0px;
+      padding: 50px 0px 60px 0px;
       .hdrpa {
         font-size: 18px;
         margin: 0px 0px 26px 0px;
@@ -458,6 +458,93 @@ main {
         overflow: hidden;
         float: left;
         width: 346px;
+        .city {
+          overflow: hidden;
+          padding: 24px 0px 0px 0px;
+          p {
+            font-size: 14px;
+            float: left;
+            margin: 5px 0px 0px 0px;
+          }
+          span {
+            color: #f13d70;
+          }
+          input {
+            display: block;
+            float: right;
+            padding: 4px 6px 6px 12px;
+            font-size: 12px;
+            background-color: #fbfbfb;
+            border: 1px solid #e8e8e8;
+          }
+          a {
+            display: block;
+            float: right;
+            font-size: 12px;
+            border-bottom: 1px solid #dbf0f0;
+            line-height: 12px;
+            margin: 6px 0px 0px 14px;
+          }
+          a:hover {
+            color: #f13d70;
+            border-bottom: 2px solid #ffffff;
+          }
+          .hint {
+            font-size: 10px;
+            color: #b8bfc0;
+            clear: both;
+            text-align: left;
+            width: 100px;
+            margin: 0px 0px 0px 0px;
+          }
+        }
+        .labelandselectorwrapper {
+          overflow: hidden;
+          margin: 16px 0px 0px 0px;
+        }
+        .selectorlabel {
+          overflow: hidden;
+          float: left;
+          p {
+            font-size: 14px;
+            margin: 29px 0px 0px 0px;
+          }
+          p:first-child {
+            margin: 5px 0px 0px 0px;
+          }
+        }
+        .selectorwrapper {
+          overflow: hidden;
+          float: right;
+          select {
+            display: block;
+            font-size: 12px;
+            font-family: Myriad Pro, sans-serif;
+            width: 100%;
+            padding: 4px 7px 4px 9px;
+            margin: 20px 0px 0px 0px;
+            background-color: #fbfbfb;
+            border: 1px solid #e8e8e8;
+            border-radius: 6px;
+          }
+          select:first-child {
+            margin: 0px 0px 0px 0px;
+          }
+        }
+        .ordernote {
+          overflow: hidden;
+          p {
+            margin: 120px 0px 49px 0px;
+            font-size: 14px;
+            font-family: Myriad Pro, sans-serif;
+          }
+          input {
+            font-size: 14px;
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #e8e8e8;
+          }
+        }
       }
       .addresswrapper {
         overflow: hidden;
