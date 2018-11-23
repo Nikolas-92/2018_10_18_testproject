@@ -10,6 +10,7 @@
     <script type="text/javascript" src="./js/jquery.js"></script>
     <script type="text/javascript" src="./js/jquery-ui.js"></script>
     <script type="text/javascript" src="./js/jquery.mask.js"></script>
+    <script type="text/javascript" src="./js/mousestop.js"></script>
     <title>Basket</title>
   </head>
   <body>
@@ -31,10 +32,8 @@
             </a>
           </div>
           <div class="search">
-            <form action="/index.php" method="post">
-              <input class="input_text" type="text" name="search" placeholder="Поиск по сайту">
-              <input class="input_image" type="image" src="./img/search.png">
-            </form>
+            <input class="input_text" type="text" name="search" placeholder="Поиск по сайту">
+            <img src="./img/search.png" alt="">
           </div>
           <div class="registration_and_authorization">
             <a href="#">Вход</a>
@@ -87,7 +86,7 @@
           <ul>
             <li><a href="#"><div></div> ГЛАВНАЯ</a></li>
             <li>
-              <a href="#">ПРОДУКТЫ <img id="down_icn" src="./img/down.png" alt=""></a>
+              <a id="dropmenuTrigger" href="#">ПРОДУКТЫ <img class="down_icn" src="./img/down.png" alt=""></a>
               <div class="dropmenu">
                 <a href="./about.html">About page</a>
                 <a href="./basket.html">Basket page</a>

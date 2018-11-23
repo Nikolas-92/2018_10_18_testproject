@@ -92,31 +92,30 @@ header {
         }
       }
       .search {
+        background-color: #f6f6f6;
         width: 450px;
         height: 38px;
-        background-color: #f6f6f6;
         border-radius: 25px;
         margin: 30px 100px 0px 60px;
         .input_text {
           display: block;
           float: left;
+          width: 386px;
+          height: 100%;
           background-color: #f6f6f6;
           border: 0px;
           font-size: 14px;
-          width: 384px;
+          border-radius: 25px;
+          margin: 0px 0px 0px 30px;
         }
-        .input_image {
-          display: block;
-          float: left;
-          margin-left: 4px;
-        }
-        form {
-          overflow: hidden;
-          float: left;
-          margin: 10px 0px 0px 32px;
+        .input_text:focus {
+          outline-width: 0px;
         }
         img {
+          display: block;
+          float: left;
           margin: 11px 0px 0px 4px;
+          cursor: pointer;
         }
       }
       .registration_and_authorization {
@@ -233,7 +232,6 @@ header {
     background-color: #4bc1c1;
     .content {
       width: $width;
-      height: 50px;
       margin: 0 auto;
       ul {
         overflow: hidden;
@@ -268,7 +266,7 @@ header {
       a:hover {
         background-color: #f13d70;
       }
-      #down_icn {
+      .down_icn {
         display: inline-block;
         margin: 0px 0px 3px 6px;
       }

@@ -72,28 +72,28 @@ header .block_a .content {
     header .block_a .content .location .margin_top {
       margin-top: 7px; }
   header .block_a .content .search {
+    background-color: #f6f6f6;
     width: 450px;
     height: 38px;
-    background-color: #f6f6f6;
     border-radius: 25px;
     margin: 30px 100px 0px 60px; }
     header .block_a .content .search .input_text {
       display: block;
       float: left;
+      width: 386px;
+      height: 100%;
       background-color: #f6f6f6;
       border: 0px;
       font-size: 14px;
-      width: 384px; }
-    header .block_a .content .search .input_image {
+      border-radius: 25px;
+      margin: 0px 0px 0px 30px; }
+    header .block_a .content .search .input_text:focus {
+      outline-width: 0px; }
+    header .block_a .content .search img {
       display: block;
       float: left;
-      margin-left: 4px; }
-    header .block_a .content .search form {
-      overflow: hidden;
-      float: left;
-      margin: 10px 0px 0px 32px; }
-    header .block_a .content .search img {
-      margin: 11px 0px 0px 4px; }
+      margin: 11px 0px 0px 4px;
+      cursor: pointer; }
   header .block_a .content .registration_and_authorization {
     margin-top: 38px; }
     header .block_a .content .registration_and_authorization a {
@@ -185,7 +185,6 @@ header .block_c {
   background-color: #4bc1c1; }
   header .block_c .content {
     width: 1170px;
-    height: 50px;
     margin: 0 auto; }
     header .block_c .content ul {
       overflow: hidden; }
@@ -211,7 +210,7 @@ header .block_c {
       display: inline-block; }
     header .block_c .content a:hover {
       background-color: #f13d70; }
-    header .block_c .content #down_icn {
+    header .block_c .content .down_icn {
       display: inline-block;
       margin: 0px 0px 3px 6px; }
     header .block_c .content .dropmenu {

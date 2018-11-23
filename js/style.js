@@ -1,32 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
-  // cart.png
-  var cart_div = document.querySelector(".cart");
-  var bundle = [];
-
-  bundle[0] = cart_div.childNodes[1];
-  bundle[1] = cart_div.childNodes[3];
-  bundle[2] = cart_div.childNodes[5];
-  bundle[3] = cart_div.childNodes[7];
-
-  bundle[0].onmouseenter = () => {
-    bundle[1].style.backgroundColor = "#f13d70";
-  }
-  bundle[0].onmouseleave = () => {
-    bundle[1].style.backgroundColor = "#b8bfc0";
-  }
-
-  bundle[2].onmouseenter = () => {
-    bundle[3].style.backgroundColor = "#f13d70";
-  }
-  bundle[2].onmouseleave = () => {
-    bundle[3].style.backgroundColor = "#b8bfc0";
-  }
-
-  // drop menu
-  document.querySelector(".dropmenu").onmouseleave = () => { $(".dropmenu").toggle("blind", 200); }
-  document.querySelector(".dropmenu").parentElement.firstElementChild.onclick = () => {
-    $(".dropmenu").toggle("blind", 200);
-  }
+document.addEventListener("DOMContentLoaded", function() {
+  addSearchShadow();
+  addCartHighlight();
+  addDropdownMenu();
 
 
 
@@ -41,10 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Fast nav buttons
     for (var i = 0; i < domFastButton.length; i++) {
-      let domFBElement = domFastButton[i];
-      let domSSElement = domSlideScreen[i];
+      var domFBElement = domFastButton[i];
+      var domSSElement = domSlideScreen[i];
 
-      domFBElement.onclick = () => {
+      domFBElement.onclick = function() {
         // disable all slides
         for (var z = 0; z < domSlideScreen.length; z++) {
           domSlideScreen[z].style.display = "none";
@@ -56,8 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Slide left, right
-    domSlideLeft.onclick = () => {
-      let lastSymbolInId = parseInt(domClDispl.id.slice(-1));
+    domSlideLeft.onclick = function() {
+      var lastSymbolInId = parseInt(domClDispl.id.slice(-1));
 
       domClDispl.style.display = "none";
 
@@ -80,8 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
         $(domClDispl).animate({opacity: 1}, 800);
       }
     }
-    domSlideRight.onclick = () => {
-      let lastSymbolInId = parseInt(domClDispl.id.slice(-1));
+    domSlideRight.onclick = function() {
+      var lastSymbolInId = parseInt(domClDispl.id.slice(-1));
 
       domClDispl.style.display = "none";
 
@@ -129,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // filter item remove testing
     var domEl = document.querySelector(".filteritem").children[0];
-    domEl.addEventListener("click", () => {
+    domEl.addEventListener("click", function() {
       domEl.parentElement.remove();
     });
 
@@ -147,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // PAGE contact.html start
   try {
-    $("#mobilephone").on("focus", () => {
+    $("#mobilephone").on("focus", function() {
       $("#mobilephone").val("+7 ").mask("+7 (000) 000 - 00 - 00");
     });
   } catch (error) {
@@ -164,12 +139,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     for (var i = 0; i < dom_incwrap.length; i++) {
       // for every wrapper in dom_incwrap
-      let dom_spanM = dom_incwrap[i].children[0]; // span element minus
-      let dom_p = dom_incwrap[i].children[1]; // p element with number
-      let dom_spanP = dom_incwrap[i].children[2]; // span element plus
+      var dom_spanM = dom_incwrap[i].children[0]; // span element minus
+      var dom_p = dom_incwrap[i].children[1]; // p element with number
+      var dom_spanP = dom_incwrap[i].children[2]; // span element plus
 
       // minus span action
-      dom_spanM.onclick = () => {
+      dom_spanM.onclick = function() {
         // check for zero
         if (parseInt(dom_p.innerHTML) >= 2) {
           dom_p.innerHTML = parseInt(dom_p.innerHTML) - 1;
@@ -177,14 +152,14 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       // plus span action
-      dom_spanP.onclick = () => {
+      dom_spanP.onclick = function() {
         dom_p.innerHTML = parseInt(dom_p.innerHTML) + 1;
       }
     }
 
 
     // phone mask
-    $("#mobilephone").on("focus", () => {
+    $("#mobilephone").on("focus", function() {
       $("#mobilephone").val("+7 ").mask("+7 (000) 000 - 00 - 00");
     });
   } catch (error) {
@@ -192,3 +167,58 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   // PAGE basket.html end
 });
+
+
+
+
+
+
+
+
+function addSearchShadow()
+{
+  var domSearch = $(".input_text");
+
+  if (domSearch.length)
+  {
+    domSearch.on("focus", function() {
+      domSearch.parent().css("box-shadow", "0px 0px 10px 4px rgba(75, 193, 193, 0.4)");
+      domSearch.attr("placeholder", "");
+    });
+    domSearch.focusout(function() {
+      domSearch.parent().css("box-shadow", "none");
+      domSearch.attr("placeholder", "Поиск по сайту");
+    });
+  }
+}
+
+
+function addCartHighlight()
+{
+  var domCart_children = $(".cart").children();
+
+  $(domCart_children[0]).mouseenter(function() {
+    $(domCart_children[1]).css("backgroundColor", "#f13d70");
+  });
+  $(domCart_children[0]).mouseleave(function() {
+    $(domCart_children[1]).css("backgroundColor", "#b8bfc0");
+  });
+
+  $(domCart_children[2]).mouseenter(function() {
+    $(domCart_children[3]).css("backgroundColor", "#f13d70");
+  });
+  $(domCart_children[2]).mouseleave(function() {
+    $(domCart_children[3]).css("backgroundColor", "#b8bfc0");
+  });
+}
+
+
+function addDropdownMenu()
+{
+  $("#dropmenuTrigger").mousestop(300, function() {
+    $(".dropmenu").toggle("blind", 200);
+  });
+  $(".dropmenu").mouseleave(function() {
+    $(".dropmenu").toggle("blind", 200);
+  });
+}
