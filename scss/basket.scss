@@ -114,9 +114,12 @@ main {
                 margin: 4px 0px 0px 0px;
               }
               p {
+                overflow: hidden;
                 float: left;
                 font-size: 24px;
-                padding: 0px 14px;
+                margin: 0px 14px;
+                width: 40px;
+                text-align: center;
               }
             }
             .pricebig {

@@ -87,9 +87,12 @@ main .block_b .content {
           main .block_b .content .basketwrapper .basketctt .basketitem .incdecamount span:last-child {
             margin: 4px 0px 0px 0px; }
           main .block_b .content .basketwrapper .basketctt .basketitem .incdecamount p {
+            overflow: hidden;
             float: left;
             font-size: 24px;
-            padding: 0px 14px; }
+            margin: 0px 14px;
+            width: 40px;
+            text-align: center; }
         main .block_b .content .basketwrapper .basketctt .basketitem .pricebig {
           float: right;
           font-size: 24px;
