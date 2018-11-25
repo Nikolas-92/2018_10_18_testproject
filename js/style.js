@@ -7,88 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
   addAccordion(); // compare.html
   addMobileNumberMask(); // contact.html, basket.html
   addItemAmountChanger(); // basket.html
-
-
-
-
-  // PAGE catalog.html start
-  try {
-    var domFastButton = document.querySelectorAll(".slidefastbutton");
-    var domSlideScreen = document.querySelectorAll(".slidedscrpreviewrapper");
-    var domClDispl = domSlideScreen[0];
-    var domSlideLeft = document.querySelector("#lsb");
-    var domSlideRight = document.querySelector("#rsb");
-
-    // Fast nav buttons
-    for (var i = 0; i < domFastButton.length; i++) {
-      var domFBElement = domFastButton[i];
-      var domSSElement = domSlideScreen[i];
-
-      domFBElement.onclick = function() {
-        // disable all slides
-        for (var z = 0; z < domSlideScreen.length; z++) {
-          domSlideScreen[z].style.display = "none";
-        }
-
-        domSSElement.style.display = "block";
-        domClDispl = domSSElement;
-      }
-    }
-
-    // Slide left, right
-    domSlideLeft.onclick = function() {
-      var lastSymbolInId = parseInt(domClDispl.id.slice(-1));
-
-      domClDispl.style.display = "none";
-
-      // if first slide, go to last
-      if (lastSymbolInId <= 1) {
-        domClDispl = domSlideScreen[domSlideScreen.length - 1];
-        domClDispl.style.display = "block";
-        if (jQuery) {
-          domClDispl.style.opacity = 0;
-          $(domClDispl).animate({opacity: 1}, 800);
-        }
-
-        return;
-      }
-
-      domClDispl = domSlideScreen[lastSymbolInId - 2];
-      domClDispl.style.display = "block";
-      if (jQuery) {
-        domClDispl.style.opacity = 0;
-        $(domClDispl).animate({opacity: 1}, 800);
-      }
-    }
-    domSlideRight.onclick = function() {
-      var lastSymbolInId = parseInt(domClDispl.id.slice(-1));
-
-      domClDispl.style.display = "none";
-
-      // if last slide, go to first
-      if (lastSymbolInId >= 3) {
-        domClDispl = domSlideScreen[0];
-        domClDispl.style.display = "block";
-        if (jQuery) {
-          domClDispl.style.opacity = 0;
-          $(domClDispl).animate({opacity: 1}, 800);
-        }
-
-        return;
-      }
-
-      domClDispl = domSlideScreen[lastSymbolInId];
-      domClDispl.style.display = "block";
-      if (jQuery) {
-        domClDispl.style.opacity = 0;
-        $(domClDispl).animate({opacity: 1}, 800);
-      }
-    }
-
-  } catch (error) {
-
-  }
-  // PAGE catalog.html end
+  addCarousel(); // catalog.html
 });
 
 
@@ -203,4 +122,73 @@ function addItemAmountChanger()
       ar_domChildren[1].innerHTML = parseInt(ar_domChildren[1].innerHTML) + 1;
     }
   }
+}
+
+function addCarousel()
+{
+  var ar_domSlides = $(".slide");
+  var ar_domFastBullets = $(".slidefastbutton");
+  var iSlideWidthPx = 1090;
+  var iNumberOfSlides = ar_domSlides.length;
+  var iCurrentSlideID = 1;
+
+  // order all slides in line, starting from second
+  for (var i = 1; i < ar_domSlides.length; i++)
+  {
+    $(ar_domSlides[i]).css("margin-left", iSlideWidthPx * i);
+  }
+
+
+  // next slide button(right)
+  $(".directionslide")[1].onclick = function() {
+    // check if last slide
+    if (iCurrentSlideID >= iNumberOfSlides) { return; }
+
+    // substr from every slide left margin
+    for (var i = 0; i < ar_domSlides.length; i++)
+    {
+      var iNewMargin = parseInt($(ar_domSlides[i]).css("marginLeft")) - iSlideWidthPx;
+      $(ar_domSlides[i]).animate({marginLeft: iNewMargin}, 400);
+    }
+
+    iCurrentSlideID += 1;
+  }
+
+  // prev slide button(left)
+  $(".directionslide")[0].onclick = function() {
+    // check if first slide
+    if (iCurrentSlideID <= 1) { return; }
+
+    // add to every slide left margin
+    for (var i = 0; i < ar_domSlides.length; i++)
+    {
+      var iNewMargin = parseInt($(ar_domSlides[i]).css("marginLeft")) + iSlideWidthPx;
+      $(ar_domSlides[i]).animate({marginLeft: iNewMargin}, 400);
+    }
+
+    iCurrentSlideID -= 1;
+  }
+
+
+  // bullet fast nav
+  for (var i = 0; i < ar_domFastBullets.length; i++)
+  {
+    ar_domFastBullets[i].onclick = function() {
+      iCurrentSlideID = parseInt(this.id.slice(-1));
+
+      // order slides
+      for (var i = 0; i < ar_domSlides.length; i++)
+      {
+        $(ar_domSlides[i]).css("margin-left", iSlideWidthPx * i);
+      }
+
+      // substr from every slide left margin
+      for (var i = 0; i < ar_domSlides.length; i++)
+      {
+        var iNewMargin = parseInt($(ar_domSlides[i]).css("marginLeft")) - iSlideWidthPx * (iCurrentSlideID - 1);
+        $(ar_domSlides[i]).css("marginLeft", iNewMargin);
+      }
+    }
+  }
+
 }

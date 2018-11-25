@@ -5,17 +5,28 @@ main .block_a {
   background-color: #f6f6f6; }
   main .block_a .content {
     overflow: hidden; }
-    main .block_a .content #lsb {
-      background-image: url("../img/slide_l.png");
-      background-repeat: no-repeat;
-      background-position: center; }
-    main .block_a .content #rsb {
-      background-image: url("../img/slide_r.png");
-      background-repeat: no-repeat;
-      background-position: center; }
     main .block_a .content .directionslide {
       overflow: hidden;
-      float: left; }
+      float: left;
+      height: 585px; }
+    main .block_a .content .directionslideright {
+      margin: 0px 0px 0px 1090px; }
+    main .block_a .content .slidefastnav {
+      overflow: hidden;
+      position: absolute;
+      width: 60px;
+      margin: 500px 0px 0px 558px;
+      z-index: 1; }
+      main .block_a .content .slidefastnav .slidefastbutton {
+        width: 15px;
+        height: 15px;
+        background-color: #e8e8e8;
+        border-radius: 25px;
+        margin-right: 5px;
+        float: left;
+        cursor: pointer; }
+      main .block_a .content .slidefastnav .slidefastbutton:hover {
+        background-color: #e33b6a; }
     main .block_a .content .slidebutton {
       overflow: hidden;
       background-color: #e8e8e8;
@@ -29,107 +40,98 @@ main .block_a {
         float: left; }
     main .block_a .content .slidebutton:hover {
       background-color: #f13d70; }
-    main .block_a .content .slide {
+    main .block_a .content .slidebuttonleft {
+      background-image: url("../img/slide_l.png");
+      background-repeat: no-repeat;
+      background-position: center; }
+    main .block_a .content .slidebuttonright {
+      background-image: url("../img/slide_r.png");
+      background-repeat: no-repeat;
+      background-position: center; }
+    main .block_a .content .slidewrapper {
+      position: absolute;
       overflow: hidden;
       float: left;
-      width: 1090px; }
-      main .block_a .content .slide .slidedscrpreviewrapper {
+      width: 1090px;
+      height: 585px;
+      margin: 0px 0px 0px 40px; }
+    main .block_a .content .slide {
+      position: absolute;
+      overflow: hidden;
+      width: 1090px;
+      height: 585px; }
+      main .block_a .content .slide .slidedscr {
         overflow: hidden;
-        display: none; }
-        main .block_a .content .slide .slidedscrpreviewrapper .slidedscr {
-          overflow: hidden;
-          float: left;
-          margin: 120px 0px 0px 55px; }
-          main .block_a .content .slide .slidedscrpreviewrapper .slidedscr .brand {
-            overflow: hidden; }
-            main .block_a .content .slide .slidedscrpreviewrapper .slidedscr .brand a {
-              display: block;
-              float: left;
-              font-size: 60px;
-              font-weight: bold;
-              font-family: Roboto, sans-serif; }
-            main .block_a .content .slide .slidedscrpreviewrapper .slidedscr .brand span {
-              display: block;
-              float: left;
-              font-size: 10px;
-              padding: 2px 6px;
-              background-color: #f13d70;
-              color: #ffffff;
-              border-radius: 4px;
-              margin-left: 4px; }
-          main .block_a .content .slide .slidedscrpreviewrapper .slidedscr .branddscr p {
-            font-family: Myriad Pro, sans-serif;
-            font-size: 18px;
-            text-align: left; }
-          main .block_a .content .slide .slidedscrpreviewrapper .slidedscr .pricebig {
-            font-size: 48px;
-            font-family: Roboto, sans-serif;
-            margin: 22px 0px; }
-            main .block_a .content .slide .slidedscrpreviewrapper .slidedscr .pricebig sup {
-              font-size: 32px; }
-          main .block_a .content .slide .slidedscrpreviewrapper .slidedscr .pricebig:first-letter {
-            margin-right: 12px; }
-          main .block_a .content .slide .slidedscrpreviewrapper .slidedscr .buymore {
-            overflow: hidden; }
-            main .block_a .content .slide .slidedscrpreviewrapper .slidedscr .buymore button {
-              padding: 12px 40px 12px 40px;
-              cursor: pointer;
-              font-size: 14px;
-              font-weight: bold;
-              color: #b8bfc0;
-              border-radius: 25px;
-              border: 2px solid #b8bfc0;
-              float: left; }
-            main .block_a .content .slide .slidedscrpreviewrapper .slidedscr .buymore button:hover {
-              border: 2px solid #e33b6a;
-              background-color: #e33b6a;
-              color: #ffffff; }
-            main .block_a .content .slide .slidedscrpreviewrapper .slidedscr .buymore img {
-              display: block;
-              float: left;
-              margin: 0px 8px 0px 0px; }
-            main .block_a .content .slide .slidedscrpreviewrapper .slidedscr .buymore button:first-child {
-              padding: 12px 49px 12px 40px;
-              border: 2px solid #e33b6a;
-              background-color: #e33b6a;
-              color: #ffffff;
-              margin-right: 14px; }
-        main .block_a .content .slide .slidedscrpreviewrapper .slidepreview {
-          overflow: hidden;
-          float: left;
-          margin: 84px 0px 0px 147px; }
-          main .block_a .content .slide .slidedscrpreviewrapper .slidepreview .slidepreviewshadow {
+        float: left;
+        margin: 120px 0px 0px 55px; }
+        main .block_a .content .slide .slidedscr .brand {
+          overflow: hidden; }
+          main .block_a .content .slide .slidedscr .brand a {
             display: block;
             float: left;
-            position: absolute;
-            margin: 340px 0px 0px 60px; }
-          main .block_a .content .slide .slidedscrpreviewrapper .slidepreview .slidepreviewshadow:last-child {
-            margin: 364px 0px 0px 4px; }
-          main .block_a .content .slide .slidedscrpreviewrapper .slidepreview img {
+            font-size: 60px;
+            font-weight: bold;
+            font-family: Roboto, sans-serif; }
+          main .block_a .content .slide .slidedscr .brand span {
             display: block;
+            float: left;
+            font-size: 10px;
+            padding: 2px 6px;
+            background-color: #f13d70;
+            color: #ffffff;
+            border-radius: 4px;
+            margin-left: 4px; }
+        main .block_a .content .slide .slidedscr .branddscr p {
+          font-family: Myriad Pro, sans-serif;
+          font-size: 18px;
+          text-align: left; }
+        main .block_a .content .slide .slidedscr .pricebig {
+          font-size: 48px;
+          font-family: Roboto, sans-serif;
+          margin: 22px 0px; }
+          main .block_a .content .slide .slidedscr .pricebig sup {
+            font-size: 32px; }
+        main .block_a .content .slide .slidedscr .pricebig:first-letter {
+          margin-right: 12px; }
+        main .block_a .content .slide .slidedscr .buymore {
+          overflow: hidden; }
+          main .block_a .content .slide .slidedscr .buymore button {
+            padding: 12px 40px 12px 40px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            color: #b8bfc0;
+            border-radius: 25px;
+            border: 2px solid #b8bfc0;
             float: left; }
-      main .block_a .content .slide .slidedscrpreviewrapper:first-child {
-        display: block; }
-      main .block_a .content .slide .slidefastnav {
+          main .block_a .content .slide .slidedscr .buymore button:hover {
+            border: 2px solid #e33b6a;
+            background-color: #e33b6a;
+            color: #ffffff; }
+          main .block_a .content .slide .slidedscr .buymore img {
+            display: block;
+            float: left;
+            margin: 0px 8px 0px 0px; }
+          main .block_a .content .slide .slidedscr .buymore button:first-child {
+            padding: 12px 49px 12px 40px;
+            border: 2px solid #e33b6a;
+            background-color: #e33b6a;
+            color: #ffffff;
+            margin-right: 14px; }
+      main .block_a .content .slide .slidepreview {
         overflow: hidden;
-        clear: both;
         float: left;
-        width: 100%;
-        margin: 61px 0px 70px 0px; }
-        main .block_a .content .slide .slidefastnav .slidefastnavwrapper {
-          overflow: hidden;
-          margin: 0px auto;
-          width: 60px; }
-        main .block_a .content .slide .slidefastnav .slidefastbutton {
-          width: 15px;
-          height: 15px;
-          background-color: #e8e8e8;
-          border-radius: 25px;
-          margin-right: 5px;
+        margin: 84px 0px 0px 147px; }
+        main .block_a .content .slide .slidepreview .slidepreviewshadow {
+          display: block;
           float: left;
-          cursor: pointer; }
-        main .block_a .content .slide .slidefastnav .slidefastbutton:hover {
-          background-color: #e33b6a; }
+          position: absolute;
+          margin: 340px 0px 0px 60px; }
+        main .block_a .content .slide .slidepreview .slidepreviewshadow:last-child {
+          margin: 364px 0px 0px 4px; }
+        main .block_a .content .slide .slidepreview img {
+          display: block;
+          float: left; }
 
 main .block_b .content {
   width: 100%;

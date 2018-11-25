@@ -218,7 +218,8 @@ header .block_c {
       position: absolute;
       min-width: 200px;
       background-color: #4bc1c1;
-      display: none; }
+      display: none;
+      z-index: 1; }
       header .block_c .content .dropmenu a {
         display: block;
         background-color: #green;
