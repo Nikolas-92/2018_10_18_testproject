@@ -126,69 +126,97 @@ function addItemAmountChanger()
 
 function addCarousel()
 {
-  var ar_domSlides = $(".slide");
-  var ar_domFastBullets = $(".slidefastbutton");
+  if (!$(".slide").length && $(".slide").length < 2) { return; }
+
+  var ar_domSlideNodes = [];
+  var iFocusIndex = 0;
   var iSlideWidthPx = 1090;
-  var iNumberOfSlides = ar_domSlides.length;
-  var iCurrentSlideID = 1;
+  var ar_domDirectionArrow = $(".directionslide");
+  var ar_domFastBullets = $(".slidefastbutton");
 
-  // order all slides in line, starting from second
-  for (var i = 1; i < ar_domSlides.length; i++)
-  {
-    $(ar_domSlides[i]).css("margin-left", iSlideWidthPx * i);
+  addCarousel_fillWithSlides(ar_domSlideNodes); // fill array with slides
+  addCarousel_sortCSS(iFocusIndex, iSlideWidthPx, ar_domSlideNodes); // sort margin
+
+  // left arrow
+  ar_domDirectionArrow[0].onclick = function() {
+    ar_domSlideNodes.unshift(ar_domSlideNodes.pop());
+    addCarousel_sortCSS(iFocusIndex, iSlideWidthPx, ar_domSlideNodes);
+    addCarousel_sortCSSAnimateLeft(iFocusIndex, iSlideWidthPx, ar_domSlideNodes);
   }
 
-
-  // next slide button(right)
-  $(".directionslide")[1].onclick = function() {
-    // check if last slide
-    if (iCurrentSlideID >= iNumberOfSlides) { return; }
-
-    // substr from every slide left margin
-    for (var i = 0; i < ar_domSlides.length; i++)
-    {
-      var iNewMargin = parseInt($(ar_domSlides[i]).css("marginLeft")) - iSlideWidthPx;
-      $(ar_domSlides[i]).animate({marginLeft: iNewMargin}, 400);
-    }
-
-    iCurrentSlideID += 1;
+  // right arrow
+  ar_domDirectionArrow[1].onclick = function() {
+    ar_domSlideNodes.push(ar_domSlideNodes.shift());
+    addCarousel_sortCSS(iFocusIndex, iSlideWidthPx, ar_domSlideNodes);
+    addCarousel_sortCSSAnimateRight(iFocusIndex, iSlideWidthPx, ar_domSlideNodes)
   }
-
-  // prev slide button(left)
-  $(".directionslide")[0].onclick = function() {
-    // check if first slide
-    if (iCurrentSlideID <= 1) { return; }
-
-    // add to every slide left margin
-    for (var i = 0; i < ar_domSlides.length; i++)
-    {
-      var iNewMargin = parseInt($(ar_domSlides[i]).css("marginLeft")) + iSlideWidthPx;
-      $(ar_domSlides[i]).animate({marginLeft: iNewMargin}, 400);
-    }
-
-    iCurrentSlideID -= 1;
-  }
-
 
   // bullet fast nav
   for (var i = 0; i < ar_domFastBullets.length; i++)
   {
     ar_domFastBullets[i].onclick = function() {
-      iCurrentSlideID = parseInt(this.id.slice(-1));
-
-      // order slides
-      for (var i = 0; i < ar_domSlides.length; i++)
-      {
-        $(ar_domSlides[i]).css("margin-left", iSlideWidthPx * i);
-      }
-
-      // substr from every slide left margin
-      for (var i = 0; i < ar_domSlides.length; i++)
-      {
-        var iNewMargin = parseInt($(ar_domSlides[i]).css("marginLeft")) - iSlideWidthPx * (iCurrentSlideID - 1);
-        $(ar_domSlides[i]).css("marginLeft", iNewMargin);
-      }
+      addCarousel_focusBullet(iFocusIndex, parseInt(this.id.slice(-1)), ar_domSlideNodes);
+      addCarousel_sortCSS(iFocusIndex, iSlideWidthPx, ar_domSlideNodes);
     }
   }
+}
 
+function addCarousel_fillWithSlides(ar_domSlideNodes)
+{
+  for (var i = 0; i < $(".slide").length; i++)
+  {
+    ar_domSlideNodes.push($(".slide")[i]);
+  }
+}
+
+function addCarousel_sortCSS(iFocusIndex, iSlideWidthPx, ar_domSlideNodes)
+{
+  // set focus position
+  $(ar_domSlideNodes[iFocusIndex]).css("marginLeft", 0);
+
+  // before focus
+  for (var i = 0; i < iFocusIndex; i++)
+  {
+    $(ar_domSlideNodes[i]).css("marginLeft", 0);
+    $(ar_domSlideNodes[i]).css("marginLeft", -1 * iSlideWidthPx);
+  }
+
+  // after focus
+  for (var i = iFocusIndex + 1; i < ar_domSlideNodes.length; i++)
+  {
+    $(ar_domSlideNodes[i]).css("marginLeft", 0);
+    $(ar_domSlideNodes[i]).css("marginLeft", iSlideWidthPx);
+  }
+}
+
+function addCarousel_sortCSSAnimateLeft(iFocusIndex, iSlideWidthPx, ar_domSlideNodes)
+{
+  $(ar_domSlideNodes[iFocusIndex]).css("marginLeft", -1 * iSlideWidthPx);
+  $(ar_domSlideNodes[iFocusIndex + 1]).css("marginLeft", 0);
+  $(ar_domSlideNodes[iFocusIndex]).animate({"marginLeft": 0}, 600);
+  $(ar_domSlideNodes[iFocusIndex + 1]).animate({"marginLeft": iSlideWidthPx}, 600);
+}
+
+function addCarousel_sortCSSAnimateRight(iFocusIndex, iSlideWidthPx, ar_domSlideNodes)
+{
+  var iPrevSlideIndex = iFocusIndex - 1;
+  if (iFocusIndex == 0) { iPrevSlideIndex = ar_domSlideNodes.length - 1; }
+
+  $(ar_domSlideNodes[iFocusIndex]).css("marginLeft", iSlideWidthPx);
+  $(ar_domSlideNodes[iPrevSlideIndex]).css("marginLeft", 0);
+  $(ar_domSlideNodes[iFocusIndex]).animate({"marginLeft": 0}, 600);
+  $(ar_domSlideNodes[iPrevSlideIndex]).animate({"marginLeft": -1 * iSlideWidthPx}, 600);
+}
+
+function addCarousel_focusBullet(iFocusIndex, iBulletID, ar_domSlideNodes)
+{
+  var iSlideFocusID = parseInt(ar_domSlideNodes[iFocusIndex].id.slice(-1));
+
+  // toss bullet into focus
+  while (iBulletID != iSlideFocusID)
+  {
+    ar_domSlideNodes.unshift(ar_domSlideNodes.pop());
+
+    iSlideFocusID = parseInt(ar_domSlideNodes[iFocusIndex].id.slice(-1));
+  }
 }
