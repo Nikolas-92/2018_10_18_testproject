@@ -1,0 +1,106 @@
+.content {
+  overflow: hidden;
+}
+
+
+.pathHDR {
+  padding: 30px 0px 0px 0px;
+  font-size: 14px;
+}
+.pathHDR_stdPoint {
+  display: inline;
+}
+.pathHDR_symbol {
+  margin: 0px 5px;
+  display: inline;
+}
+.pathHDR_stdPointRef {
+  color: #67797a;
+  text-decoration: underline;
+}
+
+
+.ItemReview {
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  margin: 30px 0px 0px 0px;
+}
+.ItemReview_imageWrap {
+  overflow: hidden;
+  float: left;
+  width: 50%;
+}
+.ItemReview_NAHRow {
+  overflow: hidden;
+  float: left;
+  width: 100%;
+}
+.ItemReview_NAHRow_name {
+  font-size: 24px;
+  font-weight: bold;
+  float: left;
+}
+.ItemReview_NAHRow_hint {
+  font-size: 18px;
+  font-weight: bold;
+  float: right;
+  color: #ffffff;
+  padding: 3px 15px;
+  background-color: #f13d70;
+  border-radius: 5px;
+}
+.ItemReview_zoomRow {
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  margin: 26px 0px 0px 0px;
+}
+.ItemReview_zoomImage {
+  display: block;
+  float: left;
+}
+.ItemReview_zoom {
+  float: left;
+  font-size: 14px;
+  margin: 3px 0px 0px 15px;
+}
+.ItemReview_displayRow {
+  overflow: hidden;
+  float: left;
+  width: 100%;
+}
+.ItemReview_hugeImage {
+  display: block;
+  float: left;
+  width: 100%;
+}
+.ItemReview_sliderRow {
+  overflow: hidden;
+  float: left;
+  width: 100%;
+}
+.ItemReview_sliderDirection {
+  overflow: hidden;
+  float: left;
+}
+.ItemReview_sliderDirectionArrow {
+  margin: 1px 0px 0px 0px;
+}
+.ItemReview_sliderItem {
+  overflow: hidden;
+  float: left;
+  width: 108px;
+  height: 108px;
+  border: 1px solid #b8bfc0;
+}
+.ItemReview_sliderItemImage {
+  display: block;
+  float: left;
+  width: 100%;
+}
+.ItemReview_descrWrap {
+  overflow: hidden;
+  float: left;
+  width: 50%;
+}
