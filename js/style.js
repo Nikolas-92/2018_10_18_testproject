@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
   addMobileNumberMask(); // contact.html, basket.html
   addItemAmountChanger(); // basket.html
   addCarousel(); // catalog.html
+  addSlider(); // review.html
 });
 
 
@@ -218,5 +219,38 @@ function addCarousel_focusBullet(iFocusIndex, iBulletID, ar_domSlideNodes)
     ar_domSlideNodes.unshift(ar_domSlideNodes.pop());
 
     iSlideFocusID = parseInt(ar_domSlideNodes[iFocusIndex].id.slice(-1));
+  }
+}
+
+function addSlider()
+{
+  var iIndexThumbDisplay = 0;
+  var ar_domSliderItem = $(".ItemReview_sliderItem");
+  var ar_domSliderArrow = $(".ItemReview_sliderDirectionArrow");
+
+  $(ar_domSliderItem[0].children[0]).css("display", "none"); // default blur off
+  iIndexThumbDisplay = 0;
+
+  for (var i = 0; i < ar_domSliderItem.length; i++)
+  {
+    ar_domSliderItem[i].onclick = function() {
+      addSlider_blurOn(ar_domSliderItem);
+      $(this.children[0]).css("display", "none"); // turn off blur for this
+
+      // display in big picture
+      // slider_picname_s.png for thumb
+      // slider_picname_b.png for big
+      var sSmallPicSrc = $(this.children[1]).attr("src").split("s.png").join("");
+      $(".ItemReview_hugeImage").attr("src", sSmallPicSrc + "b.png");
+    }
+  }
+}
+
+function addSlider_blurOn(ar_domSliderItem)
+{
+  // turn on blur for every element
+  for (var i = 0; i < ar_domSliderItem.length; i++)
+  {
+    $(ar_domSliderItem[i].children[0]).css("display", "block");
   }
 }

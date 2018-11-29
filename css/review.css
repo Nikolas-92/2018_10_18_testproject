@@ -1,6 +1,9 @@
 .content {
   overflow: hidden;
 }
+.bla {
+  margin: 0px
+}
 
 
 .pathHDR {
@@ -59,6 +62,7 @@
 .ItemReview_zoomImage {
   display: block;
   float: left;
+  cursor: pointer;
 }
 .ItemReview_zoom {
   float: left;
@@ -79,10 +83,18 @@
   overflow: hidden;
   float: left;
   width: 100%;
+  margin: 50px 0px 0px 0px;
 }
 .ItemReview_sliderDirection {
   overflow: hidden;
   float: left;
+  cursor: pointer;
+}
+.ItemReview_sliderDirection:first-child {
+  margin: 45px 30px 0px 0px;
+}
+.ItemReview_sliderDirection:last-child {
+  margin: 45px 0px 0px 30px;
 }
 .ItemReview_sliderDirectionArrow {
   margin: 1px 0px 0px 0px;
@@ -93,11 +105,25 @@
   width: 108px;
   height: 108px;
   border: 1px solid #b8bfc0;
+  cursor: pointer;
+  margin: 0px 0px 0px 20px;
+}
+.ItemReview_sliderItemFirstChild {
+  margin: 0px 0px 0px 0px;
+}
+.ItemReview_sliderItemBlur {
+  position: absolute;
+  display: block;
+  float: left;
+  width: inherit;
+  height: inherit;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .ItemReview_sliderItemImage {
   display: block;
   float: left;
-  width: 100%;
+  max-width: 100%;
+  margin: 10px 0px 0px 8px;
 }
 .ItemReview_descrWrap {
   overflow: hidden;
