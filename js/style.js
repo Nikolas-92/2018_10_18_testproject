@@ -228,14 +228,20 @@ function addSlider()
   var ar_domSliderItem = $(".ItemReview_sliderItem");
   var ar_domSliderArrow = $(".ItemReview_sliderDirectionArrow");
   var domHugeImage = $(".ItemReview_hugeImage");
+  var sSelectBorderCSS = "1px solid #b8bfc0";
+  var sUnselectBorderCSS = "1px solid #f6f6f6";
 
-  $(ar_domSliderItem[0].children[0]).css("display", "none"); // default blur off
+  // default
+  addSlider_borderCSS(ar_domSliderItem, {border: sUnselectBorderCSS});
+  addSlider_borderCSS(ar_domSliderItem[iIndexThumbDisplay], {border: sSelectBorderCSS});
+  $(ar_domSliderItem[0].children[0]).css("display", "none");
   addSlider_addIndex(ar_domSliderItem);
 
   for (var i = 0; i < ar_domSliderItem.length; i++)
   {
     ar_domSliderItem[i].onclick = function() {
-      addSlider_blurOn(ar_domSliderItem);
+      addSlider_blurOn(sUnselectBorderCSS, ar_domSliderItem);
+      addSlider_borderCSS(this, {border: sSelectBorderCSS});
       $(this.children[0]).css("display", "none"); // turn off blur for this
       addSlider_displayBigPic(domHugeImage, this);
 
@@ -255,7 +261,8 @@ function addSlider()
       iIndexThumbDisplay -= 1;
     }
 
-    addSlider_blurOn(ar_domSliderItem);
+    addSlider_blurOn(sUnselectBorderCSS, ar_domSliderItem);
+    addSlider_borderCSS(ar_domSliderItem[iIndexThumbDisplay], {border: sSelectBorderCSS});
     $(ar_domSliderItem[iIndexThumbDisplay].children[0]).css("display", "none");
     addSlider_displayBigPic(domHugeImage, ar_domSliderItem[iIndexThumbDisplay]);
   }
@@ -271,19 +278,26 @@ function addSlider()
       iIndexThumbDisplay += 1;
     }
 
-    addSlider_blurOn(ar_domSliderItem);
+    addSlider_blurOn(sUnselectBorderCSS, ar_domSliderItem);
+    addSlider_borderCSS(ar_domSliderItem[iIndexThumbDisplay], {border: sSelectBorderCSS});
     $(ar_domSliderItem[iIndexThumbDisplay].children[0]).css("display", "none");
     addSlider_displayBigPic(domHugeImage, ar_domSliderItem[iIndexThumbDisplay]);
   }
 }
 
-function addSlider_blurOn(ar_domSliderItem)
+function addSlider_blurOn(sUnselectBorderCSS, ar_domSliderItem)
 {
   // turn on blur for every element
   for (var i = 0; i < ar_domSliderItem.length; i++)
   {
     $(ar_domSliderItem[i].children[0]).css("display", "block");
   }
+  addSlider_borderCSS(ar_domSliderItem, {border: sUnselectBorderCSS});
+}
+
+function addSlider_borderCSS(domSliderItem, objCSS)
+{
+  $(domSliderItem).css(objCSS);
 }
 
 function addSlider_addIndex(ar_domSliderItem)
