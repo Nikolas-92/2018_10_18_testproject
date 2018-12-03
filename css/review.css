@@ -19,7 +19,7 @@
 }
 .pathHDR_stdPointRef {
   color: #67797a;
-  text-decoration: underline;
+  border-bottom: 1px solid #dfe2e2;
 }
 
 
@@ -200,4 +200,74 @@
   float: left;
   font-size: 12px;
   color: #b8bfc0;
+}
+.ItemReview_charactRow {
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.ItemReview_charactHeader {
+  font-size: 24px;
+}
+.ItemReview_characteristic {
+  font-size: 16px;
+  margin: 10px 0px 0px 16px;
+}
+.ItemReview_characteristic li {
+  line-height: 24px;
+}
+.ItemReview_characteristic span {
+  color: #b8bfc0;
+}
+.ItemReview_deliveryRow {
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  margin: 20px 0px 0px 0px;
+}
+.ItemReview_deliveryHeader {
+  font-size: 24px;
+}
+.ItemReview_deliveryHint {
+  font-family: Myriad Pro, sans-serif;
+  font-size: 11px;
+  margin: 20px 0px 40px 0px;
+}
+.ItemReview_deliveryTruckImg {
+  display: block;
+  float: left;
+  max-width: 98px;
+}
+.ItemReview_deliveryMethodWrap {
+  overflow: hidden;
+  float: left;
+  margin: 0px 0px 0px 30px;
+}
+.ItemReview_deliveryMethod {
+  overflow: hidden;
+  margin: 0px 0px 4px 0px;
+}
+.ItemReview_deliveryMethodImg {
+  display: block;
+  float: left;
+  margin: 2px 10px 0px 0px;
+}
+.ItemReview_deliveryMethodDscr {
+  float: left;
+  font-size: 14px;
+}
+.ItemReview_deliveryMoreInfoWrap {
+  overflow: hidden;
+  clear: both;
+  padding: 25px 0px 0px 0px;
+}
+.ItemReview_deliveryMoreInfo {
+  display: block;
+  float: left;
+  height: 16px;
+  font-size: 14px;
+  border-bottom: 1px solid #d8eded;
+  margin: 0px 12px 0px 0px;
 }
