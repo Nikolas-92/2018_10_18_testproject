@@ -9,11 +9,26 @@ document.addEventListener("DOMContentLoaded", function() {
   addItemAmountChanger(); // basket.html
   addCarousel(); // catalog.html
   addSlider(); // review.html
+  addTextSwitcher() // review.html
 });
 
 
 
 
+
+function addIndex(ar_domSliderItem)
+{
+  // add index to each element
+  for (var i = 0; i < ar_domSliderItem.length; i++)
+  {
+    $(ar_domSliderItem[i]).attr("data-index", i.toString());
+  }
+}
+
+function addCSS(domItem, objCSS)
+{
+  $(domItem).css(objCSS);
+}
 
 
 
@@ -232,16 +247,16 @@ function addSlider()
   var sUnselectBorderCSS = "1px solid #f6f6f6";
 
   // default
-  addSlider_borderCSS(ar_domSliderItem, {border: sUnselectBorderCSS});
-  addSlider_borderCSS(ar_domSliderItem[iIndexThumbDisplay], {border: sSelectBorderCSS});
+  addCSS(ar_domSliderItem, {border: sUnselectBorderCSS});
+  addCSS(ar_domSliderItem[iIndexThumbDisplay], {border: sSelectBorderCSS});
   $(ar_domSliderItem[0].children[0]).css("display", "none");
-  addSlider_addIndex(ar_domSliderItem);
+  addIndex(ar_domSliderItem);
 
   for (var i = 0; i < ar_domSliderItem.length; i++)
   {
     ar_domSliderItem[i].onclick = function() {
       addSlider_blurOn(sUnselectBorderCSS, ar_domSliderItem);
-      addSlider_borderCSS(this, {border: sSelectBorderCSS});
+      addCSS(this, {border: sSelectBorderCSS});
       $(this.children[0]).css("display", "none"); // turn off blur for this
       addSlider_displayBigPic(domHugeImage, this);
 
@@ -262,7 +277,7 @@ function addSlider()
     }
 
     addSlider_blurOn(sUnselectBorderCSS, ar_domSliderItem);
-    addSlider_borderCSS(ar_domSliderItem[iIndexThumbDisplay], {border: sSelectBorderCSS});
+    addCSS(ar_domSliderItem[iIndexThumbDisplay], {border: sSelectBorderCSS});
     $(ar_domSliderItem[iIndexThumbDisplay].children[0]).css("display", "none");
     addSlider_displayBigPic(domHugeImage, ar_domSliderItem[iIndexThumbDisplay]);
   }
@@ -279,7 +294,7 @@ function addSlider()
     }
 
     addSlider_blurOn(sUnselectBorderCSS, ar_domSliderItem);
-    addSlider_borderCSS(ar_domSliderItem[iIndexThumbDisplay], {border: sSelectBorderCSS});
+    addCSS(ar_domSliderItem[iIndexThumbDisplay], {border: sSelectBorderCSS});
     $(ar_domSliderItem[iIndexThumbDisplay].children[0]).css("display", "none");
     addSlider_displayBigPic(domHugeImage, ar_domSliderItem[iIndexThumbDisplay]);
   }
@@ -292,21 +307,7 @@ function addSlider_blurOn(sUnselectBorderCSS, ar_domSliderItem)
   {
     $(ar_domSliderItem[i].children[0]).css("display", "block");
   }
-  addSlider_borderCSS(ar_domSliderItem, {border: sUnselectBorderCSS});
-}
-
-function addSlider_borderCSS(domSliderItem, objCSS)
-{
-  $(domSliderItem).css(objCSS);
-}
-
-function addSlider_addIndex(ar_domSliderItem)
-{
-  // add index to each thumb slide
-  for (var i = 0; i < ar_domSliderItem.length; i++)
-  {
-    $(ar_domSliderItem[i]).attr("data-index", i.toString());
-  }
+  addCSS(ar_domSliderItem, {border: sUnselectBorderCSS});
 }
 
 function addSlider_displayBigPic(domHugeImage, ar_domSliderItem)
@@ -317,4 +318,30 @@ function addSlider_displayBigPic(domHugeImage, ar_domSliderItem)
   var sSmallPicSrc = $(ar_domSliderItem.children[1]).attr("src").split("s.png").join("");
 
   $(domHugeImage).attr("src", sSmallPicSrc + "b.png");
+}
+
+function addTextSwitcher()
+{
+  var iCurrentIndex = 0;
+  var ar_domCategory = $(".TextSwitcher_category");
+  var ar_domText = $(".TextSwitcher_text");
+  var sHoverCatCSS = "#f13d70";
+  var sStandartCatCSS = "#67797a";
+
+  addIndex(ar_domCategory);
+  addCSS(ar_domText, {display: "none"});
+  addCSS(ar_domText[iCurrentIndex], {display: "block"});
+  addCSS(ar_domCategory[iCurrentIndex], {color: sHoverCatCSS});
+
+  for (var i = 0; i < ar_domCategory.length; i++)
+  {
+    ar_domCategory[i].onclick = function() {
+      addCSS(ar_domCategory[iCurrentIndex], {color: sStandartCatCSS}); // turn off hover
+      addCSS(ar_domText[iCurrentIndex], {display: "none"}); // hide text
+
+      iCurrentIndex = parseInt($(this).attr("data-index"));
+      addCSS(ar_domCategory[iCurrentIndex], {color: sHoverCatCSS}); // turn on new hover
+      addCSS(ar_domText[iCurrentIndex], {display: "block"}); // display new text
+    }
+  }
 }
