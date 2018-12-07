@@ -346,3 +346,51 @@
 .TextSwitcher_text a {
   border-bottom: 1px solid #d8eded;
 }
+
+.BInfo {
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  margin: 45px 0px 0px 0px;
+}
+.BInfo_characteristicsHeader {
+  font-size: 24px;
+  font-family: Roboto, sans-serif;
+}
+.BInfo_characteristicsTable {
+  margin: 20px 0px 0px 0px;
+}
+.BInfo_characteristicsTable tr td {
+  display: block;
+  float: left;
+  line-height: 15px;
+}
+.BInfo_characteristicsTable tr td:first-child {
+  min-width: 410px;
+  font-size: 14px;
+  color: #b8bfc0;
+}
+.BInfo_characteristicsTable tr td:last-child {
+  font-size: 14px;
+}
+.BInfo_videoHeader {
+  font-size: 24px;
+  font-family: Roboto, sans-serif;
+  margin: 45px 0px 25px 0px;
+}
+.BInfo_video {
+  display: block;
+  float: left;
+  background-image: url("../img/review_youtube.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  width: 370px;
+  height: 209px;
+  margin: 0px 0px 15px 0px;
+}
+.BInfo_videoFirst {
+  width: 770px;
+  height: 433px;
+  margin-right: 30px;
+}
