@@ -426,14 +426,22 @@
   font-family: Myriad Pro, sans-serif;
   border: none;
   border-radius: 4px;
-  color: #b8bfc0;
-  background-color: #ffffff;
   padding: 4px 18px;
   margin: 0px 0px 0px 18px;
   float: right;
   cursor: pointer;
 }
-.Comment_form button[type=submit] {
+.Comment_formCancel {
+  color: #b8bfc0;
+  background-color: #ffffff;
+}
+.Comment_formCancel:hover {
+  color: #cbd3d4;
+}
+.Comment_formSubmit {
   color: #ffffff;
   background-color: #e33b6a;
+}
+.Comment_formSubmit:hover {
+  background-color: #ff336d;
 }
