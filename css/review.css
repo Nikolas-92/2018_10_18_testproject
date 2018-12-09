@@ -394,3 +394,46 @@
   height: 433px;
   margin-right: 30px;
 }
+
+.Comment {
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  margin: 35px 0px 0px 0px;
+}
+.Comment_counter {
+  font-size: 24px;
+  font-family: Roboto, sans-serif;
+}
+.Comment_form {
+  display: block;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+}
+.Comment_form textarea {
+  font-size: 14px;
+  font-family: Myriad Pro, sans-serif;
+  width: 1104px;
+  height: 18px;
+  padding: 16px 32px;
+  margin: 22px 0px 10px 0px;
+  border: 1px solid #e8e8e8;
+  resize: none;
+}
+.Comment_form button {
+  font-size: 12px;
+  font-family: Myriad Pro, sans-serif;
+  border: none;
+  border-radius: 4px;
+  color: #b8bfc0;
+  background-color: #ffffff;
+  padding: 4px 18px;
+  margin: 0px 0px 0px 18px;
+  float: right;
+  cursor: pointer;
+}
+.Comment_form button[type=submit] {
+  color: #ffffff;
+  background-color: #e33b6a;
+}
