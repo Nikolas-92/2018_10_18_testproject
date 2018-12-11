@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
   addItemAmountChanger(); // basket.html
   addCarousel(); // catalog.html
   addSlider(); // review.html
-  addTextSwitcher() // review.html
+  addTextSwitcher(); // review.html
+  addComment(); // review.html
 });
 
 
@@ -344,4 +345,18 @@ function addTextSwitcher()
       addCSS(ar_domText[iCurrentIndex], {display: "block"}); // display new text
     }
   }
+}
+
+function addComment()
+{
+  var sPlaceholderCSS = $(".Comment_formTextarea").attr("placeholder");
+
+  $(".Comment_formTextarea").on("focus", function() {
+    $(this).attr("placeholder", "");
+    $(this).css("resize", "vertical");
+  });
+  $(".Comment_formTextarea").focusout(function() {
+    $(this).attr("placeholder", sPlaceholderCSS);
+    $(this).css("resize", "none");
+  });
 }

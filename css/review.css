@@ -1,9 +1,6 @@
 .content {
   overflow: hidden;
 }
-.bla {
-  margin: 0px
-}
 
 
 .pathHDR {
@@ -319,6 +316,7 @@
   font-size: 14px;
 }
 
+
 .TextSwitcher {
   overflow: hidden;
   float: left;
@@ -346,6 +344,7 @@
 .TextSwitcher_text a {
   border-bottom: 1px solid #d8eded;
 }
+
 
 .BInfo {
   overflow: hidden;
@@ -395,6 +394,7 @@
   margin-right: 30px;
 }
 
+
 .Comment {
   overflow: hidden;
   float: left;
@@ -411,7 +411,7 @@
   float: left;
   width: 100%;
 }
-.Comment_form textarea {
+.Comment_formTextarea {
   font-size: 14px;
   font-family: Myriad Pro, sans-serif;
   width: 1104px;
@@ -444,4 +444,21 @@
 }
 .Comment_formSubmit:hover {
   background-color: #ff336d;
+}
+.Comment_orderList {
+  font-size: 12px;
+  font-family: Myriad Pro, sans-serif;
+  border: 1px solid #e8e8e8;
+  background-color: #fbfbfb;
+  border-radius: 6px;
+  padding: 4px 12px;
+}
+.Comment_userCommentGroupWrap {
+  overflow: hidden;
+  float: left;
+  width: 100%;
+}
+.Comment_userCommentWrap {
+  overflow: hidden;
+  float: left;
 }

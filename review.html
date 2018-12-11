@@ -402,10 +402,21 @@
         <div class="Comment">
           <p class="Comment_counter" >Отзывы (245)</p>
           <form class="Comment_form" action="review.html" method="post">
-            <textarea name="comment" placeholder="Оставить комментарий"></textarea>
+            <textarea class="Comment_formTextarea" name="comment" placeholder="Оставить комментарий"></textarea>
             <button class="Comment_formSubmit" type="submit" name="submit">Отправить</button>
             <button class="Comment_formCancel" type="button" name="cancel">Отмена</button>
           </form>
+          <select class="Comment_orderList">
+            <option value="recent">Самые новые</option>
+            <option value="recent2">Самые новые2</option>
+            <option value="recent3">Самые новые3</option>
+            <option value="recent4">Самые новые4</option>
+          </select>
+          <div class="Comment_userCommentGroupWrap">
+            <div class="Comment_userCommentWrap">
+
+            </div>
+          </div>
         </div>
       </div>
     </main>
