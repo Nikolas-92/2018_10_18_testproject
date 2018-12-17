@@ -460,5 +460,66 @@
 }
 .Comment_userCommentWrap {
   overflow: hidden;
+}
+.Comment_userAvatar {
   float: left;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #e8e8e8;
+  background: url("../img/avatar.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+  margin: 0px 16px 0px 0px;
+}
+.Comment_userNameDateWrap {
+  overflow: hidden;
+}
+.Comment_userName {
+  overflow: hidden;
+  float: left;
+  font-size: 14px;
+}
+.Comment_userDate {
+  overflow: hidden;
+  float: left;
+  margin: 2px 0px 0px 30px;
+}
+.Comment_userDate img {
+  float: left;
+  margin: 2px 8px 0px 0px;
+}
+.Comment_userDate p {
+  float: left;
+  font-size: 12px;
+  color: #b8bfc0;
+}
+.Comment_userRatingWrap {
+  overflow: hidden;
+  margin: 6px 0px 8px 0px;
+}
+.Comment_userPostContent {
+  overflow: hidden;
+  font-size: 12px;
+  font-family: Myriad Pro, sans-serif;
+}
+.Comment_userOptions {
+  overflow: hidden;
+  margin: 10px 0px 0px 0px;
+}
+.Comment_userOptionsReply {
+  overflow: hidden;
+  float: left;
+  cursor: pointer;
+}
+.Comment_userOptionsReply img {
+  display: block;
+  float: left;
+  margin: 2px 6px 0px 0px;
+}
+.Comment_userOptionsReply p {
+  float: left;
+  font-size: 12px;
+  font-family: Myriad Pro, sans-serif;
+  color: #f13d70;
 }
